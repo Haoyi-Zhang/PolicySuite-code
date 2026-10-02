@@ -1,0 +1,66 @@
+{
+  "case_id": "generated-120",
+  "cpu_seconds": 0.0011160570000001702,
+  "equivalent": [
+    "s0/r01/flip",
+    "s0/r01/delete",
+    "s0/r01/false",
+    "s0/r03/flip",
+    "s0/r03/delete",
+    "s0/r03/false",
+    "s0/combiner/FA",
+    "s0/r00/swap",
+    "s0/r01/swap",
+    "s0/r02/swap",
+    "s1/r01/delete",
+    "s1/r01/false",
+    "s1/r02/flip",
+    "s1/r02/delete",
+    "s1/r02/false",
+    "s1/r03/true",
+    "s1/r01/swap",
+    "s1/r02/swap"
+  ],
+  "kind": "recurrence",
+  "optimizer_states": 6,
+  "request_regions": 8,
+  "root": 1058908753743,
+  "states": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      11,
+      1,
+      0
+    ],
+    [
+      549755879435,
+      1,
+      39
+    ],
+    [
+      687236775947,
+      2,
+      37
+    ],
+    [
+      962137752587,
+      3,
+      10
+    ],
+    [
+      1058908753743,
+      4,
+      9
+    ]
+  ],
+  "suite": [
+    0,
+    3,
+    6,
+    7
+  ]
+}

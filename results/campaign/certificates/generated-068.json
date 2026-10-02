@@ -1,0 +1,54 @@
+{
+  "case_id": "generated-068",
+  "cpu_seconds": 0.0017745499999999303,
+  "equivalent": [
+    "s0/r00/flip",
+    "s0/r00/delete",
+    "s0/r01/flip",
+    "s0/r01/delete",
+    "s0/r02/flip",
+    "s0/r02/delete",
+    "s0/r03/flip",
+    "s0/r03/delete",
+    "s0/r04/flip",
+    "s0/r04/delete",
+    "s0/r05/flip",
+    "s0/r05/delete",
+    "s0/r06/flip",
+    "s0/r06/delete",
+    "s0/r07/flip",
+    "s0/r07/delete",
+    "s0/r08/flip",
+    "s0/r08/delete"
+  ],
+  "kind": "packing",
+  "layer_blocks": [
+    0,
+    9
+  ],
+  "matching_size": 0,
+  "optimizer_states": 0,
+  "packing": [
+    "s1/r01/flip",
+    "s1/r03/flip",
+    "s1/r02/flip",
+    "s1/r04/flip",
+    "s1/r05/flip",
+    "s1/r06/flip",
+    "s1/r00/flip",
+    "s1/r08/flip",
+    "s1/r07/flip"
+  ],
+  "request_regions": 9,
+  "suite": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    7,
+    11,
+    12,
+    20
+  ]
+}

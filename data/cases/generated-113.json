@@ -1,0 +1,281 @@
+{
+  "family": "typed-extended",
+  "id": "generated-113",
+  "metadata": {
+    "seed": 20261426
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/true",
+      "op": "true",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/false",
+      "op": "false",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/true",
+      "op": "true",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/false",
+      "op": "false",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/true",
+      "op": "true",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/false",
+      "op": "false",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/combiner/PO",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "PO"
+    },
+    {
+      "id": "s0/combiner/FA",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "FA"
+    },
+    {
+      "id": "s0/r00/swap",
+      "op": "swap",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/swap",
+      "op": "swap",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s1/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/true",
+      "op": "true",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/false",
+      "op": "false",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/true",
+      "op": "true",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/false",
+      "op": "false",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/true",
+      "op": "true",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/false",
+      "op": "false",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/combiner/DO",
+      "op": "combiner",
+      "snapshot": 1,
+      "value": "DO"
+    },
+    {
+      "id": "s1/combiner/FA",
+      "op": "combiner",
+      "snapshot": 1,
+      "value": "FA"
+    },
+    {
+      "id": "s1/r00/swap",
+      "op": "swap",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/swap",
+      "op": "swap",
+      "rule": 1,
+      "snapshot": 1
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "02110210"
+        },
+        {
+          "effect": "D",
+          "match": "00100100"
+        },
+        {
+          "effect": "P",
+          "match": "20121010"
+        }
+      ]
+    },
+    {
+      "combiner": "PO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "10100002"
+        },
+        {
+          "effect": "P",
+          "match": "01111110"
+        },
+        {
+          "effect": "P",
+          "match": "01002000"
+        }
+      ]
+    }
+  ],
+  "profile": "extended",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ]
+}

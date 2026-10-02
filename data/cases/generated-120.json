@@ -1,0 +1,349 @@
+{
+  "family": "typed-extended",
+  "id": "generated-120",
+  "metadata": {
+    "seed": 20261433
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/true",
+      "op": "true",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/false",
+      "op": "false",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/true",
+      "op": "true",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/false",
+      "op": "false",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/true",
+      "op": "true",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/false",
+      "op": "false",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/flip",
+      "op": "flip",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/delete",
+      "op": "delete",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/true",
+      "op": "true",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/false",
+      "op": "false",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/combiner/DO",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "DO"
+    },
+    {
+      "id": "s0/combiner/FA",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "FA"
+    },
+    {
+      "id": "s0/r00/swap",
+      "op": "swap",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/swap",
+      "op": "swap",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/swap",
+      "op": "swap",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s1/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/true",
+      "op": "true",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/false",
+      "op": "false",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/true",
+      "op": "true",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/false",
+      "op": "false",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/true",
+      "op": "true",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/false",
+      "op": "false",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/flip",
+      "op": "flip",
+      "rule": 3,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/delete",
+      "op": "delete",
+      "rule": 3,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/true",
+      "op": "true",
+      "rule": 3,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/false",
+      "op": "false",
+      "rule": 3,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/combiner/DO",
+      "op": "combiner",
+      "snapshot": 1,
+      "value": "DO"
+    },
+    {
+      "id": "s1/combiner/PO",
+      "op": "combiner",
+      "snapshot": 1,
+      "value": "PO"
+    },
+    {
+      "id": "s1/r00/swap",
+      "op": "swap",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/swap",
+      "op": "swap",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/swap",
+      "op": "swap",
+      "rule": 2,
+      "snapshot": 1
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "PO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "11102100"
+        },
+        {
+          "effect": "P",
+          "match": "00100010"
+        },
+        {
+          "effect": "D",
+          "match": "20101101"
+        },
+        {
+          "effect": "P",
+          "match": "00100110"
+        }
+      ]
+    },
+    {
+      "combiner": "FA",
+      "rules": [
+        {
+          "effect": "D",
+          "match": "10111100"
+        },
+        {
+          "effect": "P",
+          "match": "11100010"
+        },
+        {
+          "effect": "P",
+          "match": "01120210"
+        },
+        {
+          "effect": "D",
+          "match": "00012011"
+        }
+      ]
+    }
+  ],
+  "profile": "extended",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "family": "fixture",
+  "id": "fixture-007",
+  "metadata": {
+    "expected": 1,
+    "phenomenon": "incomparable error supports"
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 0
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "FA",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "112"
+        },
+        {
+          "effect": "P",
+          "match": "101"
+        },
+        {
+          "effect": "D",
+          "match": "010"
+        }
+      ]
+    }
+  ],
+  "profile": "local",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}

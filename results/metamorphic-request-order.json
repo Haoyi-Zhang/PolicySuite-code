@@ -1,0 +1,10 @@
+{
+  "cases": 144,
+  "cpu_seconds": 0.5507203409999999,
+  "minimum_sizes_preserved": 144,
+  "packing_certificates": 111,
+  "recurrence_certificates": 33,
+  "scope": "metamorphic request-order invariance on the retained finite campaign",
+  "status": "PASS",
+  "transformation": "reverse the request order and every rule's activation table"
+}

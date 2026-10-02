@@ -1,0 +1,537 @@
+{
+  "family": "masked-permit",
+  "id": "generated-028",
+  "metadata": {
+    "seed": 20261021
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/flip",
+      "op": "flip",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/delete",
+      "op": "delete",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r04/flip",
+      "op": "flip",
+      "rule": 4,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r04/delete",
+      "op": "delete",
+      "rule": 4,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r05/flip",
+      "op": "flip",
+      "rule": 5,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r05/delete",
+      "op": "delete",
+      "rule": 5,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r06/flip",
+      "op": "flip",
+      "rule": 6,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r06/delete",
+      "op": "delete",
+      "rule": 6,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r07/flip",
+      "op": "flip",
+      "rule": 7,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r07/delete",
+      "op": "delete",
+      "rule": 7,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r08/flip",
+      "op": "flip",
+      "rule": 8,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r08/delete",
+      "op": "delete",
+      "rule": 8,
+      "snapshot": 0
+    },
+    {
+      "id": "s1/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/flip",
+      "op": "flip",
+      "rule": 3,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/delete",
+      "op": "delete",
+      "rule": 3,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r04/flip",
+      "op": "flip",
+      "rule": 4,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r04/delete",
+      "op": "delete",
+      "rule": 4,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r05/flip",
+      "op": "flip",
+      "rule": 5,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r05/delete",
+      "op": "delete",
+      "rule": 5,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r06/flip",
+      "op": "flip",
+      "rule": 6,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r06/delete",
+      "op": "delete",
+      "rule": 6,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r07/flip",
+      "op": "flip",
+      "rule": 7,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r07/delete",
+      "op": "delete",
+      "rule": 7,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r08/flip",
+      "op": "flip",
+      "rule": 8,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r08/delete",
+      "op": "delete",
+      "rule": 8,
+      "snapshot": 1
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "OPO",
+      "rules": [
+        {
+          "effect": "D",
+          "match": "11111111111111111111111111111111"
+        },
+        {
+          "effect": "D",
+          "match": "01000000010001101100010001000000"
+        },
+        {
+          "effect": "D",
+          "match": "00111110100100000001000000000000"
+        },
+        {
+          "effect": "P",
+          "match": "00011000100000001001000100000110"
+        },
+        {
+          "effect": "D",
+          "match": "00000001000000010000001100101011"
+        },
+        {
+          "effect": "P",
+          "match": "00000001010000010000000000000000"
+        },
+        {
+          "effect": "D",
+          "match": "01111110110101101101010001000000"
+        },
+        {
+          "effect": "D",
+          "match": "10000000001010000010100010010100"
+        },
+        {
+          "effect": "D",
+          "match": "10000001001010010010101110111111"
+        }
+      ]
+    },
+    {
+      "combiner": "OPO",
+      "rules": [
+        {
+          "effect": "D",
+          "match": "11000111101100101000100100101011"
+        },
+        {
+          "effect": "D",
+          "match": "00111000010011010111011011010100"
+        },
+        {
+          "effect": "P",
+          "match": "00000000000100000100101000000010"
+        },
+        {
+          "effect": "D",
+          "match": "11111111111111111111111111111111"
+        },
+        {
+          "effect": "D",
+          "match": "00000100101000100000100100001001"
+        },
+        {
+          "effect": "D",
+          "match": "00011000000011010001011000000000"
+        },
+        {
+          "effect": "D",
+          "match": "11000011000100001000000000100010"
+        },
+        {
+          "effect": "P",
+          "match": "00000000100000000000000011010000"
+        },
+        {
+          "effect": "D",
+          "match": "00100000010000000110000011010100"
+        }
+      ]
+    }
+  ],
+  "profile": "local",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ]
+}

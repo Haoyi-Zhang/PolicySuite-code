@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "bib_entries": 55,
+  "unique_bib_keys": 55,
+  "citation_occurrences": 64,
+  "unique_cited_keys": 55,
+  "bbl_items": 55,
+  "missing_bibliography_keys": [],
+  "uncited_bibliography_keys": [],
+  "duplicate_keys": [],
+  "duplicate_dois": [],
+  "duplicate_titles": [],
+  "entries_without_doi": [
+    "xacml"
+  ],
+  "unclassified_keys": [],
+  "hopcroft_matching_entries": [
+    "hopcroft1973"
+  ],
+  "karp_reducibility_entries": [
+    "karp1972"
+  ],
+  "pdf_pages": 12,
+  "source_pdf_sync": {
+    "pdf_newer_than_tex": true,
+    "pdf_newer_than_bib": true,
+    "pdf_newer_than_bbl": true
+  },
+  "audit_csv": "reference-audit.csv"
+}

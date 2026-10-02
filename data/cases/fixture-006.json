@@ -1,0 +1,66 @@
+{
+  "family": "fixture",
+  "id": "fixture-006",
+  "metadata": {
+    "phenomenon": "effect errors collapse only at root"
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/true",
+      "op": "true",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/false",
+      "op": "false",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/combiner/PO",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "PO"
+    },
+    {
+      "id": "s0/combiner/FA",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "FA"
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "22"
+        }
+      ]
+    }
+  ],
+  "profile": "extended",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0
+    ],
+    [
+      1
+    ]
+  ]
+}

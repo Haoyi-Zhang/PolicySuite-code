@@ -1,0 +1,41 @@
+{
+  "case_id": "generated-108",
+  "cpu_seconds": 0.00044925100000003937,
+  "equivalent": [
+    "s0/r00/delete",
+    "s0/r00/true",
+    "s0/r00/false",
+    "s0/r01/delete",
+    "s0/r01/true",
+    "s0/r01/false",
+    "s0/r00/swap",
+    "s0/r01/swap",
+    "s0/r02/swap",
+    "s1/r03/flip",
+    "s1/r03/delete",
+    "s1/r03/false",
+    "s1/r01/swap"
+  ],
+  "kind": "packing",
+  "layer_blocks": [
+    3,
+    5
+  ],
+  "matching_size": 3,
+  "optimizer_states": 0,
+  "packing": [
+    "s1/r02/flip",
+    "s1/r02/true",
+    "s1/combiner/PO",
+    "s1/r00/flip",
+    "s1/r01/flip"
+  ],
+  "request_regions": 8,
+  "suite": [
+    0,
+    2,
+    3,
+    6,
+    7
+  ]
+}

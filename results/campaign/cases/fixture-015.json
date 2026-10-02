@@ -1,0 +1,268 @@
+{
+  "ablations": {
+    "delete": {
+      "full_profile_coverage": 1.0,
+      "size": 8
+    },
+    "flip": {
+      "full_profile_coverage": 1.0,
+      "size": 8
+    },
+    "local": {
+      "full_profile_coverage": 1.0,
+      "size": 8
+    }
+  },
+  "baseline": {
+    "conflict_oblivious": {
+      "detectable": 24,
+      "fraction": 1.0,
+      "killed": 24,
+      "size": 8,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "delta_only": {
+      "detectable": 24,
+      "fraction": 0.0,
+      "killed": 0,
+      "size": 0,
+      "suite": []
+    },
+    "greedy": {
+      "detectable": 24,
+      "fraction": 1.0,
+      "killed": 24,
+      "size": 8,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "pairwise": {
+      "detectable": 24,
+      "fraction": 0.6666666666666666,
+      "killed": 16,
+      "size": 4,
+      "suite": [
+        0,
+        3,
+        5,
+        6
+      ]
+    },
+    "random_trials": [
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265891
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265892
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265893
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265894
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265895
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265896
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265897
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265898
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265899
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265900
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265901
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265902
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265903
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265904
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265905
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265906
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265907
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265908
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265909
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 8,
+        "complete_size": 8,
+        "seed": 20265910
+      }
+    ],
+    "unreduced": {
+      "detectable": 24,
+      "fraction": 1.0,
+      "killed": 24,
+      "size": 8,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "case_encoding_bytes": 3076,
+  "certificate": "packing",
+  "certificate_bytes": 492,
+  "checker_steps_upper_bound": 16512,
+  "corruptions": [
+    {
+      "rejected": true,
+      "type": "remove_selected_request",
+      "witness": {
+        "accepted": false,
+        "checker_steps": 2176,
+        "mutant": "D",
+        "mutation": "s1/r00/flip",
+        "reason": "uncovered mutation",
+        "reference": "P",
+        "request": [
+          0,
+          0,
+          0
+        ],
+        "request_index": 0
+      }
+    },
+    {
+      "rejected": true,
+      "type": "equivalent_inventory"
+    },
+    {
+      "rejected": true,
+      "type": "unknown_proof"
+    },
+    {
+      "rejected": true,
+      "type": "duplicate_packing"
+    }
+  ],
+  "cpu_seconds": 0.009418681000000095,
+  "detectable": 24,
+  "equivalent": 8,
+  "family": "fixture",
+  "id": "fixture-015",
+  "max_rules_per_snapshot": 8,
+  "mutations": 32,
+  "old_snapshot": {
+    "common_coverage": 0.4166666666666667,
+    "size": 1,
+    "suite": [
+      0
+    ]
+  },
+  "optimum": 8,
+  "output_delta_requests": 0,
+  "peak_rss_kib": 93556,
+  "regions": 8,
+  "requests": 8,
+  "rules": 16,
+  "snapshots": 2,
+  "states": 0,
+  "status": "ok",
+  "support_bit_width": 8,
+  "wall_seconds": 0.009425603999943633
+}

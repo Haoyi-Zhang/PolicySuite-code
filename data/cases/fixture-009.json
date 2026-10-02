@@ -1,0 +1,106 @@
+{
+  "family": "fixture",
+  "id": "fixture-009",
+  "metadata": {
+    "expected": 2,
+    "phenomenon": "two snapshot parity restriction"
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s1/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 1
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "1100"
+        },
+        {
+          "effect": "P",
+          "match": "0011"
+        }
+      ]
+    },
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "1010"
+        },
+        {
+          "effect": "P",
+          "match": "0101"
+        }
+      ]
+    }
+  ],
+  "profile": "local",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ]
+}

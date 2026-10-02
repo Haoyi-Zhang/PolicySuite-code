@@ -1,0 +1,36 @@
+{
+  "case_id": "generated-114",
+  "cpu_seconds": 0.0004791299999999943,
+  "equivalent": [
+    "s0/r00/swap",
+    "s0/r01/swap",
+    "s0/r02/swap",
+    "s1/r02/flip",
+    "s1/r03/true",
+    "s1/r00/swap"
+  ],
+  "kind": "packing",
+  "layer_blocks": [
+    5,
+    4
+  ],
+  "matching_size": 3,
+  "optimizer_states": 0,
+  "packing": [
+    "s0/r00/true",
+    "s0/r00/flip",
+    "s1/r00/true",
+    "s1/r01/swap",
+    "s1/r03/flip",
+    "s1/r00/delete"
+  ],
+  "request_regions": 8,
+  "suite": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

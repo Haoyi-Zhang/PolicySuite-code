@@ -1,0 +1,8 @@
+{
+  "cpu_seconds": 0.7535361460000001,
+  "direct_disjoint_support_families": 2800,
+  "scope": "finite generator-independent validation; not a machine-checked general proof",
+  "seed": 20260929,
+  "status": "PASS",
+  "unrestricted_finite_set_families": 1200
+}

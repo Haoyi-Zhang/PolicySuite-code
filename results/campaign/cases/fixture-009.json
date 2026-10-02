@@ -1,0 +1,252 @@
+{
+  "ablations": {
+    "delete": {
+      "full_profile_coverage": 1.0,
+      "size": 2
+    },
+    "flip": {
+      "full_profile_coverage": 1.0,
+      "size": 2
+    },
+    "local": {
+      "full_profile_coverage": 1.0,
+      "size": 2
+    }
+  },
+  "baseline": {
+    "conflict_oblivious": {
+      "detectable": 8,
+      "fraction": 1.0,
+      "killed": 8,
+      "size": 2,
+      "suite": [
+        0,
+        3
+      ]
+    },
+    "delta_only": {
+      "detectable": 8,
+      "fraction": 0.0,
+      "killed": 0,
+      "size": 0,
+      "suite": []
+    },
+    "greedy": {
+      "detectable": 8,
+      "fraction": 1.0,
+      "killed": 8,
+      "size": 2,
+      "suite": [
+        0,
+        3
+      ]
+    },
+    "pairwise": {
+      "detectable": 8,
+      "fraction": 1.0,
+      "killed": 8,
+      "size": 4,
+      "suite": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "random_trials": [
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265925
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265926
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265927
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265928
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265929
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265930
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265931
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265932
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265933
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265934
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265935
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265936
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265937
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265938
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265939
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265940
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265941
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265942
+      },
+      {
+        "budget_fraction": 0.75,
+        "budget_size": 2,
+        "complete_size": 3,
+        "seed": 20265943
+      },
+      {
+        "budget_fraction": 1.0,
+        "budget_size": 2,
+        "complete_size": 2,
+        "seed": 20265944
+      }
+    ],
+    "unreduced": {
+      "detectable": 8,
+      "fraction": 1.0,
+      "killed": 8,
+      "size": 4,
+      "suite": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "case_encoding_bytes": 979,
+  "certificate": "packing",
+  "certificate_bytes": 249,
+  "checker_steps_upper_bound": 648,
+  "corruptions": [
+    {
+      "rejected": true,
+      "type": "remove_selected_request",
+      "witness": {
+        "accepted": false,
+        "checker_steps": 80,
+        "mutant": "D",
+        "mutation": "s0/r00/flip",
+        "reason": "uncovered mutation",
+        "reference": "P",
+        "request": [
+          0,
+          0
+        ],
+        "request_index": 0
+      }
+    },
+    {
+      "rejected": true,
+      "type": "equivalent_inventory"
+    },
+    {
+      "rejected": true,
+      "type": "unknown_proof"
+    },
+    {
+      "rejected": true,
+      "type": "duplicate_packing"
+    }
+  ],
+  "cpu_seconds": 0.002293391999999894,
+  "detectable": 8,
+  "equivalent": 0,
+  "family": "fixture",
+  "id": "fixture-009",
+  "max_rules_per_snapshot": 2,
+  "mutations": 8,
+  "old_snapshot": {
+    "common_coverage": 0.75,
+    "size": 2,
+    "suite": [
+      0,
+      2
+    ]
+  },
+  "optimum": 2,
+  "output_delta_requests": 0,
+  "peak_rss_kib": 93428,
+  "regions": 4,
+  "requests": 4,
+  "rules": 4,
+  "snapshots": 2,
+  "states": 0,
+  "status": "ok",
+  "support_bit_width": 4,
+  "wall_seconds": 0.0023013919999357313
+}

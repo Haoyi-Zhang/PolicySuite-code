@@ -1,0 +1,80 @@
+{
+  "case_id": "generated-106",
+  "cpu_seconds": 0.0007879839999997973,
+  "equivalent": [
+    "s0/r01/flip",
+    "s0/r01/delete",
+    "s0/r01/false",
+    "s0/r02/delete",
+    "s0/r02/true",
+    "s0/r02/false",
+    "s0/r03/flip",
+    "s0/r03/delete",
+    "s0/r03/true",
+    "s0/r03/false",
+    "s0/r04/flip",
+    "s0/r04/delete",
+    "s0/r04/true",
+    "s0/r04/false",
+    "s0/r01/swap",
+    "s0/r02/swap",
+    "s0/r03/swap",
+    "s1/r00/delete",
+    "s1/r00/true",
+    "s1/r00/false",
+    "s1/r02/true",
+    "s1/r04/true",
+    "s1/r00/swap",
+    "s1/r01/swap",
+    "s1/r02/swap",
+    "s1/r03/swap"
+  ],
+  "kind": "recurrence",
+  "optimizer_states": 7,
+  "request_regions": 8,
+  "root": 263813071896911,
+  "states": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      3023656976384,
+      1,
+      38
+    ],
+    [
+      3023661170688,
+      1,
+      22
+    ],
+    [
+      47004126281738,
+      2,
+      43
+    ],
+    [
+      47175924973578,
+      3,
+      35
+    ],
+    [
+      193432515510283,
+      4,
+      26
+    ],
+    [
+      263813071896911,
+      5,
+      6
+    ]
+  ],
+  "suite": [
+    0,
+    1,
+    2,
+    4,
+    5
+  ]
+}

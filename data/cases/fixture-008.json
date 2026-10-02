@@ -1,0 +1,143 @@
+{
+  "family": "fixture",
+  "id": "fixture-008",
+  "metadata": {
+    "expected": 3,
+    "phenomenon": "three snapshot parity obstruction"
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s1/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s2/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 2
+    },
+    {
+      "id": "s2/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 2
+    },
+    {
+      "id": "s2/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 2
+    },
+    {
+      "id": "s2/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 2
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "1100"
+        },
+        {
+          "effect": "P",
+          "match": "0011"
+        }
+      ]
+    },
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "1010"
+        },
+        {
+          "effect": "P",
+          "match": "0101"
+        }
+      ]
+    },
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "1001"
+        },
+        {
+          "effect": "P",
+          "match": "0110"
+        }
+      ]
+    }
+  ],
+  "profile": "local",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ]
+}

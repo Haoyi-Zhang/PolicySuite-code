@@ -1,0 +1,23 @@
+{
+  "case_id": "fixture-006",
+  "cpu_seconds": 4.579199999987793e-05,
+  "equivalent": [
+    "s0/r00/flip",
+    "s0/combiner/PO",
+    "s0/combiner/FA"
+  ],
+  "kind": "packing",
+  "layer_blocks": [
+    1,
+    0
+  ],
+  "matching_size": 0,
+  "optimizer_states": 0,
+  "packing": [
+    "s0/r00/delete"
+  ],
+  "request_regions": 1,
+  "suite": [
+    0
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "family": "fixture",
+  "id": "fixture-012",
+  "metadata": {
+    "expected": 2,
+    "phenomenon": "three snapshot positive control"
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s1/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s2/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 2
+    },
+    {
+      "id": "s2/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 2
+    },
+    {
+      "id": "s2/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 2
+    },
+    {
+      "id": "s2/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 2
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "10"
+        },
+        {
+          "effect": "P",
+          "match": "01"
+        }
+      ]
+    },
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "10"
+        },
+        {
+          "effect": "P",
+          "match": "01"
+        }
+      ]
+    },
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "10"
+        },
+        {
+          "effect": "P",
+          "match": "01"
+        }
+      ]
+    }
+  ],
+  "profile": "local",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0
+    ],
+    [
+      1
+    ]
+  ]
+}

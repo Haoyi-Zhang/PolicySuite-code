@@ -1,0 +1,255 @@
+{
+  "ablations": {
+    "delete": {
+      "full_profile_coverage": 0.8333333333333334,
+      "size": 2
+    },
+    "flip": {
+      "full_profile_coverage": 0.9166666666666666,
+      "size": 3
+    },
+    "local": {
+      "full_profile_coverage": 0.9166666666666666,
+      "size": 3
+    }
+  },
+  "baseline": {
+    "conflict_oblivious": {
+      "detectable": 24,
+      "fraction": 0.4166666666666667,
+      "killed": 10,
+      "size": 2,
+      "suite": [
+        2,
+        3
+      ]
+    },
+    "delta_only": {
+      "detectable": 24,
+      "fraction": 0.5833333333333334,
+      "killed": 14,
+      "size": 5,
+      "suite": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "greedy": {
+      "detectable": 24,
+      "fraction": 1.0,
+      "killed": 24,
+      "size": 5,
+      "suite": [
+        4,
+        7,
+        6,
+        0,
+        3
+      ]
+    },
+    "pairwise": {
+      "detectable": 24,
+      "fraction": 0.6666666666666666,
+      "killed": 16,
+      "size": 4,
+      "suite": [
+        0,
+        3,
+        5,
+        6
+      ]
+    },
+    "random_trials": [
+      {
+        "budget_fraction": 0.9166666666666666,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267838
+      },
+      {
+        "budget_fraction": 0.6666666666666666,
+        "budget_size": 4,
+        "complete_size": 5,
+        "seed": 20267839
+      },
+      {
+        "budget_fraction": 0.8333333333333334,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267840
+      },
+      {
+        "budget_fraction": 0.875,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267841
+      },
+      {
+        "budget_fraction": 0.6666666666666666,
+        "budget_size": 4,
+        "complete_size": 5,
+        "seed": 20267842
+      },
+      {
+        "budget_fraction": 0.9166666666666666,
+        "budget_size": 4,
+        "complete_size": 8,
+        "seed": 20267843
+      },
+      {
+        "budget_fraction": 0.8333333333333334,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267844
+      },
+      {
+        "budget_fraction": 0.7083333333333334,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267845
+      },
+      {
+        "budget_fraction": 0.9166666666666666,
+        "budget_size": 4,
+        "complete_size": 8,
+        "seed": 20267846
+      },
+      {
+        "budget_fraction": 0.625,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267847
+      },
+      {
+        "budget_fraction": 0.625,
+        "budget_size": 4,
+        "complete_size": 8,
+        "seed": 20267848
+      },
+      {
+        "budget_fraction": 0.875,
+        "budget_size": 4,
+        "complete_size": 8,
+        "seed": 20267849
+      },
+      {
+        "budget_fraction": 0.8333333333333334,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267850
+      },
+      {
+        "budget_fraction": 0.6666666666666666,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267851
+      },
+      {
+        "budget_fraction": 0.9583333333333334,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267852
+      },
+      {
+        "budget_fraction": 0.875,
+        "budget_size": 4,
+        "complete_size": 8,
+        "seed": 20267853
+      },
+      {
+        "budget_fraction": 0.625,
+        "budget_size": 4,
+        "complete_size": 8,
+        "seed": 20267854
+      },
+      {
+        "budget_fraction": 0.8333333333333334,
+        "budget_size": 4,
+        "complete_size": 7,
+        "seed": 20267855
+      },
+      {
+        "budget_fraction": 0.625,
+        "budget_size": 4,
+        "complete_size": 8,
+        "seed": 20267856
+      },
+      {
+        "budget_fraction": 0.6666666666666666,
+        "budget_size": 4,
+        "complete_size": 6,
+        "seed": 20267857
+      }
+    ],
+    "unreduced": {
+      "detectable": 24,
+      "fraction": 1.0,
+      "killed": 24,
+      "size": 8,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "case_encoding_bytes": 3387,
+  "certificate": "recurrence",
+  "certificate_bytes": 608,
+  "checker_steps_upper_bound": 4778,
+  "corruptions": [
+    {
+      "rejected": true,
+      "type": "remove_selected_request",
+      "witness": {
+        "accepted": false,
+        "checker_steps": 1408,
+        "mutant": "D",
+        "mutation": "s0/r00/flip",
+        "reason": "uncovered mutation",
+        "reference": "P",
+        "request": [
+          0,
+          0,
+          0
+        ],
+        "request_index": 0
+      }
+    }
+  ],
+  "cpu_seconds": 0.006942870999999906,
+  "detectable": 24,
+  "equivalent": 18,
+  "family": "typed-extended",
+  "id": "generated-120",
+  "max_rules_per_snapshot": 4,
+  "mutations": 42,
+  "old_snapshot": {
+    "common_coverage": 0.875,
+    "size": 3,
+    "suite": [
+      0,
+      3,
+      7
+    ]
+  },
+  "optimum": 4,
+  "output_delta_requests": 5,
+  "peak_rss_kib": 94052,
+  "regions": 8,
+  "requests": 8,
+  "rules": 8,
+  "snapshots": 2,
+  "states": 6,
+  "status": "ok",
+  "support_bit_width": 8,
+  "wall_seconds": 0.006950239999923724
+}

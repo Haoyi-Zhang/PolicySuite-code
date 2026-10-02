@@ -1,0 +1,330 @@
+{
+  "family": "proof-boundary",
+  "id": "error-triangle-04",
+  "metadata": {
+    "expected": 8,
+    "expected_packing": 4,
+    "provenance": "owned theorem construction"
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/flip",
+      "op": "flip",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r03/delete",
+      "op": "delete",
+      "rule": 3,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r04/flip",
+      "op": "flip",
+      "rule": 4,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r04/delete",
+      "op": "delete",
+      "rule": 4,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r05/flip",
+      "op": "flip",
+      "rule": 5,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r05/delete",
+      "op": "delete",
+      "rule": 5,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r06/flip",
+      "op": "flip",
+      "rule": 6,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r06/delete",
+      "op": "delete",
+      "rule": 6,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r07/flip",
+      "op": "flip",
+      "rule": 7,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r07/delete",
+      "op": "delete",
+      "rule": 7,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r08/flip",
+      "op": "flip",
+      "rule": 8,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r08/delete",
+      "op": "delete",
+      "rule": 8,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r09/flip",
+      "op": "flip",
+      "rule": 9,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r09/delete",
+      "op": "delete",
+      "rule": 9,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r10/flip",
+      "op": "flip",
+      "rule": 10,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r10/delete",
+      "op": "delete",
+      "rule": 10,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r11/flip",
+      "op": "flip",
+      "rule": 11,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r11/delete",
+      "op": "delete",
+      "rule": 11,
+      "snapshot": 0
+    },
+    {
+      "id": "s1/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/flip",
+      "op": "flip",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r02/delete",
+      "op": "delete",
+      "rule": 2,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/flip",
+      "op": "flip",
+      "rule": 3,
+      "snapshot": 1
+    },
+    {
+      "id": "s1/r03/delete",
+      "op": "delete",
+      "rule": 3,
+      "snapshot": 1
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "FA",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "112000000000"
+        },
+        {
+          "effect": "D",
+          "match": "010000000000"
+        },
+        {
+          "effect": "P",
+          "match": "111000000000"
+        },
+        {
+          "effect": "P",
+          "match": "000112000000"
+        },
+        {
+          "effect": "D",
+          "match": "000010000000"
+        },
+        {
+          "effect": "P",
+          "match": "000111000000"
+        },
+        {
+          "effect": "P",
+          "match": "000000112000"
+        },
+        {
+          "effect": "D",
+          "match": "000000010000"
+        },
+        {
+          "effect": "P",
+          "match": "000000111000"
+        },
+        {
+          "effect": "P",
+          "match": "000000000112"
+        },
+        {
+          "effect": "D",
+          "match": "000000000010"
+        },
+        {
+          "effect": "P",
+          "match": "000000000111"
+        }
+      ]
+    },
+    {
+      "combiner": "FA",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "101000000000"
+        },
+        {
+          "effect": "P",
+          "match": "000101000000"
+        },
+        {
+          "effect": "P",
+          "match": "000000101000"
+        },
+        {
+          "effect": "P",
+          "match": "000000000101"
+        }
+      ]
+    }
+  ],
+  "profile": "local",
+  "requests": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ]
+}

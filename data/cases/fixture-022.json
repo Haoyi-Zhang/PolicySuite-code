@@ -1,0 +1,110 @@
+{
+  "family": "fixture",
+  "id": "fixture-022",
+  "metadata": {
+    "phenomenon": "duplicate rule independence"
+  },
+  "mutations": [
+    {
+      "id": "s0/r00/flip",
+      "op": "flip",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/delete",
+      "op": "delete",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/true",
+      "op": "true",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r00/false",
+      "op": "false",
+      "rule": 0,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/flip",
+      "op": "flip",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/delete",
+      "op": "delete",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/true",
+      "op": "true",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/r01/false",
+      "op": "false",
+      "rule": 1,
+      "snapshot": 0
+    },
+    {
+      "id": "s0/combiner/PO",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "PO"
+    },
+    {
+      "id": "s0/combiner/FA",
+      "op": "combiner",
+      "snapshot": 0,
+      "value": "FA"
+    },
+    {
+      "id": "s0/r00/swap",
+      "op": "swap",
+      "rule": 0,
+      "snapshot": 0
+    }
+  ],
+  "policies": [
+    {
+      "combiner": "DO",
+      "rules": [
+        {
+          "effect": "P",
+          "match": "1100"
+        },
+        {
+          "effect": "P",
+          "match": "1100"
+        }
+      ]
+    }
+  ],
+  "profile": "extended",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ]
+}

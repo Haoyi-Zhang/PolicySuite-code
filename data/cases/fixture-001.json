@@ -1,0 +1,29 @@
+{
+  "family": "fixture",
+  "id": "fixture-001",
+  "metadata": {
+    "expected": 0,
+    "phenomenon": "empty obligations"
+  },
+  "mutations": [],
+  "policies": [
+    {
+      "combiner": "DO",
+      "rules": []
+    },
+    {
+      "combiner": "PO",
+      "rules": []
+    }
+  ],
+  "profile": "local",
+  "provenance": "owned generated finite input",
+  "requests": [
+    [
+      0
+    ],
+    [
+      1
+    ]
+  ]
+}

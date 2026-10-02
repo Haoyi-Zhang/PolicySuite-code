@@ -1,0 +1,42 @@
+{
+  "case_id": "fixture-018",
+  "cpu_seconds": 0.00011782800000004201,
+  "equivalent": [
+    "s0/r00/delete",
+    "s0/r01/delete",
+    "s0/r02/delete",
+    "s0/r03/delete",
+    "s0/r04/delete",
+    "s0/r05/delete"
+  ],
+  "kind": "recurrence",
+  "optimizer_states": 4,
+  "request_regions": 3,
+  "root": 1365,
+  "states": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      80,
+      1,
+      4
+    ],
+    [
+      1280,
+      1,
+      8
+    ],
+    [
+      1365,
+      2,
+      0
+    ]
+  ],
+  "suite": [
+    0,
+    1
+  ]
+}

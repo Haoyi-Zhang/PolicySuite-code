@@ -1,0 +1,57 @@
+{
+  "case_id": "generated-113",
+  "cpu_seconds": 0.00042172699999998287,
+  "equivalent": [
+    "s0/r00/swap",
+    "s0/r01/swap",
+    "s1/r02/flip",
+    "s1/r02/delete",
+    "s1/r02/false",
+    "s1/combiner/DO",
+    "s1/combiner/FA",
+    "s1/r00/swap",
+    "s1/r01/swap"
+  ],
+  "kind": "recurrence",
+  "optimizer_states": 6,
+  "request_regions": 8,
+  "root": 83836927,
+  "states": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      12464,
+      1,
+      4
+    ],
+    [
+      12474,
+      2,
+      1
+    ],
+    [
+      11547067,
+      2,
+      0
+    ],
+    [
+      83112379,
+      3,
+      18
+    ],
+    [
+      83836927,
+      4,
+      16
+    ]
+  ],
+  "suite": [
+    0,
+    2,
+    3,
+    7
+  ]
+}

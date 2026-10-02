@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "zip_integrity": true,
+  "single_project_root": true,
+  "project_root_entries": [
+    "CURRENT-STATE.md",
+    "artifact",
+    "paper",
+    "research-plan.md"
+  ],
+  "commands": [
+    {
+      "cmd": "/opt/pyvenv/bin/python reproduce.py --output /mnt/data/clean61_replay",
+      "returncode": 0,
+      "seconds": 8.724,
+      "log": "/mnt/data/clean61-reproduction.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python src/audit_refinement.py",
+      "returncode": 0,
+      "seconds": 0.633,
+      "log": "/mnt/data/clean61-refinement.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python tests/test_core.py",
+      "returncode": 0,
+      "seconds": 1.015,
+      "log": "/mnt/data/clean61-test_core.py.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python tests/test_structure.py",
+      "returncode": 0,
+      "seconds": 0.869,
+      "log": "/mnt/data/clean61-test_structure.py.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python tests/test_error_boundary.py",
+      "returncode": 0,
+      "seconds": 0.775,
+      "log": "/mnt/data/clean61-test_error_boundary.py.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python tests/test_generator_independence.py",
+      "returncode": 0,
+      "seconds": 1.425,
+      "log": "/mnt/data/clean61-test_generator_independence.py.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python tests/test_metamorphic.py",
+      "returncode": 0,
+      "seconds": 1.131,
+      "log": "/mnt/data/clean61-test_metamorphic.py.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python paper/build.py",
+      "returncode": 0,
+      "seconds": 4.811,
+      "log": "/mnt/data/clean61-paper-build.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python paper/audit_references.py --paper-dir paper --output-dir artifact/results",
+      "returncode": 0,
+      "seconds": 0.717,
+      "log": "/mnt/data/clean61-reference-audit.log"
+    }
+  ],
+  "artifact_reproduction_accepted": true,
+  "campaign_cases_passed": 144,
+  "owned_inputs_equal": 144,
+  "proof_inputs_equal": 4,
+  "deterministic_json_outputs_equal": 294,
+  "deterministic_csv_outputs_equal": 4,
+  "generator_independence": {
+    "cpu_seconds": 0.8162664270000001,
+    "direct_disjoint_support_families": 2800,
+    "scope": "finite generator-independent validation; not a machine-checked general proof",
+    "seed": 20260929,
+    "status": "PASS",
+    "unrestricted_finite_set_families": 1200
+  },
+  "metamorphic": {
+    "cases": 144,
+    "cpu_seconds": 0.559261478,
+    "minimum_sizes_preserved": 144,
+    "packing_certificates": 111,
+    "recurrence_certificates": 33,
+    "scope": "metamorphic request-order invariance on the retained finite campaign",
+    "status": "PASS",
+    "transformation": "reverse the request order and every rule's activation table"
+  },
+  "reference_audit_status": "PASS",
+  "bibliography_entries": 61,
+  "unique_cited_keys": 61,
+  "citation_occurrences": 70,
+  "bbl_items": 61,
+  "main_pdf_pages": 12,
+  "pdf_contains_reference_61": true,
+  "main_pdf_rebuilt_text_equal_to_delivered_pdf": true,
+  "supplement_pdf_rebuilt_text_equal_to_delivered_pdf": true,
+  "standalone_repository_zip_integrity": true,
+  "standalone_repository_commands": [
+    {
+      "cmd": "/opt/pyvenv/bin/python reproduce.py --output /mnt/data/clean61_repo_replay",
+      "returncode": 0,
+      "seconds": 8.863,
+      "log": "/mnt/data/clean61-repo-reproduction.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python tests/test_generator_independence.py",
+      "returncode": 0,
+      "seconds": 1.416,
+      "log": "/mnt/data/clean61-repo-generator.log"
+    },
+    {
+      "cmd": "/opt/pyvenv/bin/python tests/test_metamorphic.py",
+      "returncode": 0,
+      "seconds": 1.284,
+      "log": "/mnt/data/clean61-repo-metamorphic.log"
+    }
+  ],
+  "standalone_repository_replay_accepted": true,
+  "standalone_repository_campaign_cases_passed": 144,
+  "scope": "retained finite 144-case campaign, generator-independent and metamorphic validation, 61-reference source/PDF release"
+}

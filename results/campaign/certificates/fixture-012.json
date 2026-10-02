@@ -1,0 +1,30 @@
+{
+  "case_id": "fixture-012",
+  "cpu_seconds": 0.00012324100000005167,
+  "equivalent": [],
+  "kind": "recurrence",
+  "optimizer_states": 3,
+  "request_regions": 2,
+  "root": 4095,
+  "states": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      3276,
+      1,
+      2
+    ],
+    [
+      4095,
+      2,
+      0
+    ]
+  ],
+  "suite": [
+    0,
+    1
+  ]
+}

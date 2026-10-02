@@ -1,0 +1,31 @@
+{
+  "checker_steps": 194562,
+  "cpu_seconds": 0.33088891499999984,
+  "sharp_gap_cases": [
+    {
+      "blocks": 1,
+      "maximum_packing": 1,
+      "optimum": 2,
+      "requests": 3
+    },
+    {
+      "blocks": 2,
+      "maximum_packing": 2,
+      "optimum": 4,
+      "requests": 6
+    },
+    {
+      "blocks": 3,
+      "maximum_packing": 3,
+      "optimum": 6,
+      "requests": 9
+    },
+    {
+      "blocks": 4,
+      "maximum_packing": 4,
+      "optimum": 8,
+      "requests": 12
+    }
+  ],
+  "single_snapshot_cases": 2971
+}

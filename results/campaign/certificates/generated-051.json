@@ -1,0 +1,36 @@
+{
+  "case_id": "generated-051",
+  "cpu_seconds": 0.0009093719999999639,
+  "equivalent": [
+    "s0/r05/flip",
+    "s0/r05/delete",
+    "s1/r06/flip",
+    "s1/r06/delete"
+  ],
+  "kind": "packing",
+  "layer_blocks": [
+    6,
+    6
+  ],
+  "matching_size": 5,
+  "optimizer_states": 0,
+  "packing": [
+    "s0/r06/flip",
+    "s1/r05/flip",
+    "s1/r04/flip",
+    "s1/r03/delete",
+    "s1/r01/delete",
+    "s1/r02/flip",
+    "s1/r00/delete"
+  ],
+  "request_regions": 23,
+  "suite": [
+    0,
+    1,
+    3,
+    10,
+    13,
+    15,
+    25
+  ]
+}
