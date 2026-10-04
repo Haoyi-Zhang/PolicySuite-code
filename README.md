@@ -64,7 +64,7 @@ The original campaign records 5,522,547 conservative checking steps and 3.347 su
 
 ## License and assistance
 
-Original repository materials use the accompanying MIT license. No third-party solver, Balana code, native policy corpus, or external research PDF is redistributed here. The companion paper package's unmodified IEEE template assets retain their own notices. ChatGPT was used substantively in formulation, proof drafting, code, finite execution, and documentation; this is not a claim of human-only authorship or independent validation. External use requires human assessment of rights, authorship, scientific responsibility, and the relevant disclosure rules.
+Original repository materials use the accompanying MIT license. No third-party solver, Balana code, native policy corpus, or external research PDF is redistributed here. The companion paper package's unmodified IEEE template assets retain their own notices.
 
 ## Paper-reference release audit
 
