@@ -1,5 +1,9 @@
 """Independent exhaustive error-free structural and matching oracle."""
-import itertools,time,resource,json
+import itertools,time,json
+try:
+    import resource
+except ImportError:
+    resource = None
 start=time.process_time()
 def ev(rules,alg,x):
     vals=[e for t,e in rules if x in t]
@@ -62,5 +66,5 @@ triples=[(0,0,0),(0,1,1),(1,0,1),(1,1,0)]
 f=[frozenset(i for i,t in enumerate(triples) if t[d]==v) for d in range(3) for v in range(2)]
 assert oracle(f,4)==3
 assert all(oracle(f[2*i:2*i+2]+f[2*j:2*j+2],4)==2 for i,j in itertools.combinations(range(3),2))
-res=dict(policy_evaluations=checked,structural_admissions=admitted,two_layer_families=len(fams),two_layer_pairs=pairs,three_layer_control_optimum=3,cpu_seconds=time.process_time()-start,peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,workers=1)
+res=dict(policy_evaluations=checked,structural_admissions=admitted,two_layer_families=len(fams),two_layer_pairs=pairs,three_layer_control_optimum=3,cpu_seconds=time.process_time()-start,peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss if resource is not None else None,workers=1)
 print(json.dumps(res,indent=2))

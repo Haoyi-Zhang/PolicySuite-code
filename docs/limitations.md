@@ -12,4 +12,4 @@ The exact fallback can be exponential. Three-snapshot partition hardness does no
 
 The retained empirical workload is small: at most 32 requests and 21 rules per snapshot. The supported 4,096-request and 80-rule limits are admission ceilings, not measured performance. CPU and RSS are observed process measurements; fixed generated families do not support population-level confidence or prevalence claims. The stronger globally subsumed greedy baseline was added after the original campaign and is labeled post-protocol.
 
-Only retained campaign and clean reproduction counters are fully linked to raw records. All preliminary repair attempts did not retain a complete cumulative logical-step log. Cgroup CPU accounting provides a conservative session-wide CPU upper bound, but it is not a per-experiment timing study. No exact all-development logical-step-closure claim is made.
+Resource measurements describe individual retained runs. Session-wide cgroup accounting is not an isolated per-experiment timing measure.

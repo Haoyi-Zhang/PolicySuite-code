@@ -28,16 +28,44 @@ def same_csv(a: Path, b: Path) -> None:
         if normalized(list(csv.DictReader(fa))) != normalized(list(csv.DictReader(fb))):
             raise ValueError(f'deterministic CSV mismatch: {a.name}')
 
-def command(args: list[str], save: Path | None = None) -> str:
+def command(args: list[str], save: Path | None = None, *, log_dir: Path, timeout: float = 45) -> str:
     env = dict(os.environ, PYTHONHASHSEED='0', OMP_NUM_THREADS='1',
-               OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1', PYTHONDONTWRITEBYTECODE='1')
-    run = subprocess.run([sys.executable, *args], cwd=ROOT, env=env,
-                         capture_output=True, text=True, timeout=45, check=True)
+               OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1', PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1')
+    log_dir.mkdir(parents=True, exist_ok=True)
+    stage = log_dir / f'{len(list(log_dir.glob("*.json"))) + 1:02d}-{Path(args[0]).stem}'
+    argv = [sys.executable, '-B', *args]
+    started = time.monotonic()
+    stdout = stderr = ''
+    exit_code = None
+    timed_out = False
+    try:
+        child = subprocess.Popen(argv, cwd=ROOT, env=env,
+                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        try:
+            stdout, stderr = child.communicate(timeout=timeout)
+        except subprocess.TimeoutExpired:
+            child.kill()
+            stdout, stderr = child.communicate()
+            timed_out = True
+        exit_code = child.returncode
+    finally:
+        for suffix, content in [('stdout.log', stdout), ('stderr.log', stderr)]:
+            if isinstance(content, bytes):
+                content = content.decode('utf-8', errors='replace')
+            stage.with_suffix('.' + suffix).write_text(content, encoding='utf-8')
+        stage.with_suffix('.json').write_text(json.dumps({
+            'command': argv, 'exit_code': exit_code, 'timed_out': timed_out,
+            'wall_seconds': time.monotonic() - started, 'timeout_seconds': timeout,
+        }, indent=2) + '\n', encoding='utf-8')
+    if timed_out:
+        raise subprocess.TimeoutExpired(argv, timeout, stdout, stderr)
+    if exit_code:
+        raise subprocess.CalledProcessError(exit_code, argv, stdout, stderr)
     if save is not None:
-        value=json.loads(run.stdout)
+        value=json.loads(stdout)
         save.parent.mkdir(parents=True,exist_ok=True)
         save.write_text(json.dumps(value,indent=2,sort_keys=True)+'\n')
-    return run.stdout
+    return stdout
 
 def main() -> None:
     parser=argparse.ArgumentParser(description=__doc__)
@@ -50,8 +78,10 @@ def main() -> None:
     start=time.monotonic()
     report={'accepted':False, 'offline':True, 'workers':1,
             'excluded_nondeterministic_fields':sorted(VOLATILE)}
+    def run(args, save=None):
+        return command(args, save, log_dir=out/'run-logs')
     try:
-        command(['src/generate.py',str(out/'cases')])
+        run(['src/generate.py',str(out/'cases')])
         old=sorted((ROOT/'data/cases').glob('*.json'));new=sorted((out/'cases').glob('*.json'))
         if len(old)!=144 or [p.name for p in old]!=[p.name for p in new]:
             raise ValueError('owned-case inventory differs')
@@ -59,9 +89,13 @@ def main() -> None:
             # Inputs contain no timings and must be equal in full.
             if json.loads(a.read_text())!=json.loads(b.read_text()):
                 raise ValueError(f'input differs: {a.name}')
-        command(['tests/test_core.py'],out/'results/core-tests.json')
-        command(['tests/test_structure.py'],out/'results/structure-tests.json')
-        command(['tests/test_error_boundary.py'],out/'results/error-boundary-tests.json')
+        run(['tests/test_core.py'],out/'results/core-tests.json')
+        run(['tests/test_structure.py'],out/'results/structure-tests.json')
+        run(['tests/test_error_boundary.py'],out/'results/error-boundary-tests.json')
+        run(['tests/test_input_contract.py'],out/'results/input-contract-tests.json')
+        run(['tests/test_generator_independence.py'],out/'results/generator-independence-tests.json')
+        run(['tests/test_metamorphic.py'],out/'results/metamorphic-request-order.json')
+        run(['tests/test_retained_replay.py', '--output', str(out/'portable-replay')])
         # Verify exact retained proof-boundary inputs without rerunning the solver.
         sys.path.insert(0,str(ROOT/'tests'))
         from test_error_boundary import triangle
@@ -69,11 +103,11 @@ def main() -> None:
             c=triangle(k)
             if c!=json.loads((ROOT/'data/proof-cases'/f'{c["id"]}.json').read_text()):
                 raise ValueError('proof-boundary input differs')
-        command(['src/run_campaign.py','--cases',str(out/'cases'),
+        run(['src/run_campaign.py','--cases',str(out/'cases'),
                  '--output',str(out/'results/campaign'),'--start','0','--stop','144'])
-        command(['src/kernel_baseline.py','--cases',str(out/'cases'),
+        run(['src/kernel_baseline.py','--cases',str(out/'cases'),
                  '--output',str(out/'results/kernel-greedy.json')])
-        command(['src/summarize.py','--results',str(out/'results'),
+        run(['src/summarize.py','--results',str(out/'results'),
                  '--output',str(out/'results/derived')])
         count=0
         for folder in ('campaign/cases','campaign/certificates'):
@@ -82,7 +116,8 @@ def main() -> None:
             if [p.name for p in refs]!=[p.name for p in fresh]:raise ValueError('result inventory differs')
             for a,b in zip(refs,fresh):same_json(a,b);count+=1
         for name in ('core-tests.json','structure-tests.json','error-boundary-tests.json',
-                     'kernel-greedy.json','campaign/summary.json','derived/totals.json'):
+                     'kernel-greedy.json','campaign/summary.json','derived/totals.json',
+                     'generator-independence-tests.json','metamorphic-request-order.json'):
             same_json(ROOT/'results'/name,out/'results'/name);count+=1
         for name in ('campaign/metrics.csv','derived/families.csv','derived/coverage.csv','derived/amplification.csv'):
             same_csv(ROOT/'results'/name,out/'results'/name)

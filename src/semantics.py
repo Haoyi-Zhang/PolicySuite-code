@@ -3,32 +3,41 @@ Ternary rule matches: 0=false, 1=true, 2=error. Public observations collapse
 extended Indeterminate to I only after the root combiner has run.
 """
 from __future__ import annotations
+import json
 from typing import Any
 
 ALGORITHMS = ('DO', 'PO', 'FA', 'ODO', 'OPO')
 
 def validate(case: dict[str, Any]) -> None:
-    if not isinstance(case, dict) or not isinstance(case.get('id'), str):
+    if not isinstance(case, dict) or not isinstance(case.get('id'), str) or not case['id']:
         raise ValueError('case must have a string id')
     req = case.get('requests')
     if not isinstance(req, list) or not 1 <= len(req) <= 4096:
         raise ValueError('request count outside 1..4096')
-    if len({repr(x) for x in req}) != len(req):
+    if not all(isinstance(x, list) and 1 <= len(x) <= 12 for x in req):
+        raise ValueError('request tuple shape')
+    if len({len(x) for x in req}) != 1:
+        raise ValueError('inconsistent tuple dimensions')
+    if not all(type(v) in (int, str) for x in req for v in x):
+        raise ValueError('request atom type')
+    if len({json.dumps(x) for x in req}) != len(req):
         raise ValueError('duplicate requests')
+    if any(len({json.dumps(x[i]) for x in req}) > 8 for i in range(len(req[0]))):
+        raise ValueError('attribute-domain bound')
     ps = case.get('policies')
     if not isinstance(ps, list) or not 1 <= len(ps) <= 3:
         raise ValueError('expected one to three snapshots')
     for p in ps:
-        if p.get('combiner') not in ALGORITHMS or not isinstance(p.get('rules'),list) or len(p['rules'])>80:
+        if not isinstance(p, dict) or p.get('combiner') not in ALGORITHMS or not isinstance(p.get('rules'),list) or len(p['rules'])>80:
             raise ValueError('invalid policy')
         for r in p['rules']:
-            if r.get('effect') not in ('P','D') or not isinstance(r.get('match'),str) or len(r['match'])!=len(req) or set(r['match'])-set('012'):
+            if not isinstance(r, dict) or r.get('effect') not in ('P','D') or not isinstance(r.get('match'),str) or len(r['match'])!=len(req) or set(r['match'])-set('012'):
                 raise ValueError('invalid finite rule match table')
     muts=case.get('mutations')
     if not isinstance(muts,list) or len(muts)>256:raise ValueError('mutation limit')
     ids=[]
     for m in muts:
-        if not isinstance(m.get('id'),str):raise ValueError('mutation id')
+        if not isinstance(m, dict) or not isinstance(m.get('id'),str):raise ValueError('mutation id')
         ids.append(m['id']);s=m.get('snapshot')
         if type(s) is not int or not 0<=s<len(ps):raise ValueError('snapshot index')
         if m.get('op') not in ('flip','delete','true','false','swap','combiner'):raise ValueError('mutation operation')
@@ -39,6 +48,11 @@ def validate(case: dict[str, Any]) -> None:
             if type(i) is not int or not 0<=i<len(ps[s]['rules']):raise ValueError('rule index')
             if m['op']=='swap' and i+1>=len(ps[s]['rules']):raise ValueError('swap endpoint')
     if len(set(ids))!=len(ids):raise ValueError('duplicate mutation ids')
+    profile = case.get('profile')
+    if profile not in ('local', 'extended', 'declared'):
+        raise ValueError('unknown mutation profile')
+    if profile != 'declared' and muts != local_mutations(ps, profile == 'extended'):
+        raise ValueError('incomplete or altered declared mutation profile')
 
 def mutate(p:dict,m:dict)->dict:
     p={'combiner':p['combiner'],'rules':[dict(r) for r in p['rules']]};op=m['op']

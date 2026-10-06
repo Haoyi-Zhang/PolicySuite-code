@@ -1,6 +1,7 @@
 """Request-order metamorphic test over all retained campaign cases."""
 from __future__ import annotations
 
+import argparse
 import copy
 import json
 import sys
@@ -24,8 +25,13 @@ def reverse_requests(case: dict) -> dict:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', type=Path, help='optional destination outside retained reference results')
+    args = parser.parse_args()
     started = time.process_time()
     cases = sorted((ARTIFACT / "data" / "cases").glob("*.json"))
+    if len(cases) != 144:
+        raise ValueError('expected all 144 retained campaign cases')
     certificate_dir = ARTIFACT / "results" / "campaign" / "certificates"
     passed = 0
     packing = 0
@@ -38,6 +44,7 @@ def main() -> None:
         result = checker.check(transformed, certificate)
         assert result["accepted"]
         assert len(certificate["suite"]) == len(original["suite"])
+        assert certificate["kind"] == original["kind"]
         passed += 1
         packing += certificate["kind"] == "packing"
         recurrence += certificate["kind"] == "recurrence"
@@ -51,8 +58,9 @@ def main() -> None:
         "cpu_seconds": time.process_time() - started,
         "scope": "metamorphic request-order invariance on the retained finite campaign",
     }
-    path = ARTIFACT / "results" / "metamorphic-request-order.json"
-    path.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    if args.output is not None:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps(output, sort_keys=True))
 
 

@@ -7,6 +7,7 @@ finite set families.  These checks are finite evidence, not a general proof.
 """
 from __future__ import annotations
 
+import argparse
 import itertools
 import json
 import random
@@ -106,6 +107,9 @@ def direct_instance(rng: random.Random) -> tuple[list[int], list[set[int]], list
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', type=Path, help='optional destination outside retained reference results')
+    args = parser.parse_args()
     started = time.process_time()
     rng = random.Random(SEED)
     direct_passed = 0
@@ -138,8 +142,9 @@ def main() -> None:
         "cpu_seconds": time.process_time() - started,
         "scope": "finite generator-independent validation; not a machine-checked general proof",
     }
-    output = Path(__file__).resolve().parents[1] / "results" / "generator-independence-tests.json"
-    output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    if args.output is not None:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps(result, sort_keys=True))
 
 

@@ -1,6 +1,6 @@
 # Reference verification and source/PDF synchronization
 
-The final manuscript contains **61 unique bibliography records** and cites all 61 keys in claim-specific related-work or attribution sentences. The generated `main.bbl` contains 61 items. `artifact/results/reference-audit.json` is the executable release gate; `reference-audit.csv` records title, authors, year, venue, DOI or official URL, citation count, section, and surrounding citation context for every record.
+The manuscript contains **61 unique bibliography records** and cites all 61 keys in related-work or attribution sentences. The generated `main.bbl` contains 61 items. `artifact/results/reference-audit.json` and `reference-audit.csv` are retained outputs of an earlier local check, with title, authors, year, venue, DOI or official URL, citation count, section, and surrounding citation context for every record.
 
 ## Duplicate resolution
 
@@ -20,4 +20,4 @@ The page range for Martin and Xie's *Automated Test Generation for Access Contro
 
 ## Verification boundary
 
-Sixty records carry unique DOI identifiers; the remaining item is the official OASIS XACML 3.0 standard. The release gate checks required metadata, DOI syntax, key/title/DOI uniqueness, citation use, BBL emission, the presence of reference [61] in the compiled PDF, 12-page length, and source-to-PDF modification order. Metadata and claim fit were reviewed against DOI, publisher, institutional, or standards-body records. This is a bibliographic audit, not independent peer review and not a redistribution of copyrighted full texts.
+Sixty records carry unique DOI identifiers; the remaining item is the official OASIS XACML 3.0 standard. The local command checks required metadata, DOI syntax, key/title/DOI uniqueness, citation use, BBL emission, the presence of reference [61] in the compiled PDF, 12-page length, and source-to-PDF modification order. It does not retrieve external sources or read their results. New rows therefore use `local_structure_only` and do not assign a source-verification date. Historical source-review assertions in retained outputs are distinct from what this executable can establish. Publisher identity and whether a citation supports a sentence require separate primary-source reading.
