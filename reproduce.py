@@ -93,6 +93,7 @@ def main() -> None:
         run(['tests/test_structure.py'],out/'results/structure-tests.json')
         run(['tests/test_error_boundary.py'],out/'results/error-boundary-tests.json')
         run(['tests/test_input_contract.py'],out/'results/input-contract-tests.json')
+        run(['tests/test_sparse_transpose.py'])
         run(['tests/test_generator_independence.py'],out/'results/generator-independence-tests.json')
         run(['tests/test_metamorphic.py'],out/'results/metamorphic-request-order.json')
         run(['tests/test_retained_replay.py', '--output', str(out/'portable-replay')])

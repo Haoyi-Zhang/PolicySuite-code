@@ -44,6 +44,7 @@ python tests/test_core.py
 python tests/test_structure.py
 python tests/test_error_boundary.py
 python tests/test_input_contract.py
+python -B tests/test_sparse_transpose.py -v
 python tests/test_generator_independence.py --output /tmp/conflict-generator-checks.json
 python tests/test_metamorphic.py --output /tmp/conflict-request-order.json
 python tests/test_retained_replay.py --output /tmp/conflict-portable-replay
@@ -57,6 +58,19 @@ The main runner supports `--start`, `--stop`, and `--resume` for bounded chunks.
 `.github/workflows/scientific-checks.yml` runs the complete offline reproduction sequentially on Linux for pushes to `main` and manual dispatch. It uses a 720-second outer bound, fails on any scientific failure, and uploads the actual raw output directory even when a check fails. The workflow itself does not imply that a hosted run has occurred.
 
 ## Evidence layout
+
+The recurrence producer initializes request rows once, then transposes only the
+set request bits of each support into the original mutation-position columns.
+Request order, first duplicate-row representatives, pivots, children, suite ties,
+complete states and refusal guards are retained. No runtime improvement is
+measured. Five additional self-contained regression methods compare actual
+production routines with subset-enumerated optima and a complete-child closure,
+exercise fixed-clock budget boundaries, and check real finite policy supports
+with the unchanged independent checker. The reproduction driver/CI runs this
+module explicitly; it adds a raw stage log, not a replacement for archived counts
+or any additional equality exclusion. Historical 2,800/1,200 generator checks
+remain the independent algorithms originally reported, not retroactively
+claimed production-core executions.
 
 `src/` contains the producer, independent checker, deterministic generator, baselines, runner, and table derivation. `tests/` contains exact subset oracles and constructive boundary checks. `data/cases/` is the fixed 144-case owned corpus; `data/proof-cases/` contains four additional theorem constructions, not public benchmark cases. `results/campaign/` contains all original case records and certificates, including failed-suite witnesses; `results/derived/` contains numeric tables and plot data. `results/kernel-greedy.json` is the separately labeled post-protocol stronger baseline. `proofs/theorems.md` is standalone and does not require the paper directory. Source-attribution and claim-evidence CSVs are at this repository root.
 

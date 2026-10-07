@@ -59,7 +59,11 @@ def matching_certificate(case:dict,supports:list[int]):
 
 def dynamic_certificate(case:dict,supports:list[int],max_states:int=100000,seconds:float=60):
     q=len(case['requests']);n=len(supports)
-    rows=[sum(1<<i for i,s in enumerate(supports) if s>>x&1) for x in range(q)]
+    rows=[0]*q
+    request_mask=(1<<q)-1
+    for i,s in enumerate(supports):
+        # Only the declared q request positions were inspected by the dense loop.
+        for x in bits(s & request_mask):rows[x] |= 1<<i
     full=sum(1<<i for i,s in enumerate(supports) if s)
     candidates={}
     for x,r in enumerate(rows):
