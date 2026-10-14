@@ -1,0 +1,1117 @@
+{
+  "cases": [
+    {
+      "costs": {
+        "fa-local": {
+          "checker_steps": [
+            44
+          ],
+          "median_check_cpu_seconds": 0.0,
+          "median_produce_cpu_seconds": 0.0,
+          "median_total_cpu_seconds": 0.0,
+          "median_total_wall_seconds": 0.0003555000002961606,
+          "optimizer_states": [
+            0
+          ],
+          "proof_kinds": [
+            "packing"
+          ]
+        },
+        "ordinary": {
+          "checker_steps": [
+            44
+          ],
+          "median_check_cpu_seconds": 0.0,
+          "median_produce_cpu_seconds": 0.0,
+          "median_total_cpu_seconds": 0.0,
+          "median_total_wall_seconds": 0.0004655999946407974,
+          "optimizer_states": [
+            2
+          ],
+          "proof_kinds": [
+            "recurrence"
+          ]
+        }
+      },
+      "id": "fixture-004",
+      "mutations": 4,
+      "requests": 4,
+      "rules": 2,
+      "same_optimum": true,
+      "sizes": {
+        "fa-local": [
+          1
+        ],
+        "ordinary": [
+          1
+        ]
+      }
+    },
+    {
+      "costs": {
+        "fa-local": {
+          "checker_steps": [
+            65
+          ],
+          "median_check_cpu_seconds": 0.0,
+          "median_produce_cpu_seconds": 0.0,
+          "median_total_cpu_seconds": 0.0,
+          "median_total_wall_seconds": 0.0003525999782141298,
+          "optimizer_states": [
+            0
+          ],
+          "proof_kinds": [
+            "packing"
+          ]
+        },
+        "ordinary": {
+          "checker_steps": [
+            67
+          ],
+          "median_check_cpu_seconds": 0.0,
+          "median_produce_cpu_seconds": 0.0,
+          "median_total_cpu_seconds": 0.0,
+          "median_total_wall_seconds": 0.0003617999900598079,
+          "optimizer_states": [
+            3
+          ],
+          "proof_kinds": [
+            "recurrence"
+          ]
+        }
+      },
+      "id": "fixture-007",
+      "mutations": 6,
+      "requests": 3,
+      "rules": 3,
+      "same_optimum": true,
+      "sizes": {
+        "fa-local": [
+          1
+        ],
+        "ordinary": [
+          1
+        ]
+      }
+    }
+  ],
+  "cost_scope": "warm in-process input read/parse, producer including semantics and quotient, certificate file roundtrip, independent checker; excludes imports/process startup, experiment packaging and native policy execution",
+  "eligible_cases": 2,
+  "failed_trials_or_pairs": 0,
+  "format": "policy-fa-comparison-1",
+  "input_scope": [
+    {
+      "eligible": false,
+      "id": "fixture-001",
+      "input_sha256": "33ee6bb8cfd0672403e90502aa573590b1426619734be36b8eaf1f44b851eeb7",
+      "path": "fixture-001.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-002",
+      "input_sha256": "b1c415b67772fdb8d72df23f502514f20837b32a8e0ef861c5d56990b9514df9",
+      "path": "fixture-002.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-003",
+      "input_sha256": "ca370e661113d9d7c64d273388ccc8b8701ecfd1bb8a52bd807f68c1f9e68f8e",
+      "path": "fixture-003.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": true,
+      "id": "fixture-004",
+      "input_sha256": "aa68d4c70fce4a048bc59bb6a356425dff6430681604dae4f82e03223dc239db",
+      "path": "fixture-004.json",
+      "reason": "one FA, complete local"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-005",
+      "input_sha256": "588ca8d892c916a2f5b4978f0096b20d56f78ed165b2f6e612232c868dfbd57a",
+      "path": "fixture-005.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-006",
+      "input_sha256": "3dac6a1f168cbaa0fa33ae2ef49a02f8e472708e1a10a0c6235bdc0da0aa405f",
+      "path": "fixture-006.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": true,
+      "id": "fixture-007",
+      "input_sha256": "2bd3f87cc3b7d08c811606e22b327f8b0bfb8f277df94d2803a159fa45c93944",
+      "path": "fixture-007.json",
+      "reason": "one FA, complete local"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-008",
+      "input_sha256": "8e91a88ac3aca96444044b6f6ef456bc62f752318771878dde0cec46829e6f8f",
+      "path": "fixture-008.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-009",
+      "input_sha256": "77fe75c3fe1218a76d8d91be557a9eea3204a9daecb2dc26b37538a52f3b8f61",
+      "path": "fixture-009.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-010",
+      "input_sha256": "c6cdf6fa9c567dd57dbf84e32caa96ff746abff72943c93b3c89db271c20b4a8",
+      "path": "fixture-010.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-011",
+      "input_sha256": "be043186fbc4a8ad8f6e3da79ca21e5409266206a05aca668de353b57a538ddc",
+      "path": "fixture-011.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-012",
+      "input_sha256": "fdbb19be486a6a71d5a40218958222a0baa182e2ec94b06709b2e8434b112dac",
+      "path": "fixture-012.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-013",
+      "input_sha256": "291720617c423485930be7394f52f88b247d1a63a9173ae10a5b3fac56d184c9",
+      "path": "fixture-013.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-014",
+      "input_sha256": "ec5f3348ce952f202bbbb4127a3e8be27db864d31388689551a843dc7c3b7166",
+      "path": "fixture-014.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-015",
+      "input_sha256": "041fcec5c413b58020beeb68200ef082aabad2cf338e4f43680bacc294332824",
+      "path": "fixture-015.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-016",
+      "input_sha256": "3e871cea56cc317f5f8604a028da550723e2da49128f85cee3ee38504922ca29",
+      "path": "fixture-016.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-017",
+      "input_sha256": "10cc85e18669087f807fb0bf803210be9bf596b5116ee350a1fb28cd1ccb143c",
+      "path": "fixture-017.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-018",
+      "input_sha256": "7e226f6179b6622bf77c31d4b616504b7f42795b778ff7f8433c841b5e454450",
+      "path": "fixture-018.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-019",
+      "input_sha256": "db185a23c0b23e0d01f0277e019a8a810588f9b0934ecaa168d7c331e806f2e8",
+      "path": "fixture-019.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-020",
+      "input_sha256": "4e5a1ee5bc8914a138b3b7c2413c7e44c3ed4d8803fcb7f4ba5553d26634f3d9",
+      "path": "fixture-020.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-021",
+      "input_sha256": "d120d11398f870bdf64307be7a71f60fb55a460beea87d13d8da83acaca0b46a",
+      "path": "fixture-021.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-022",
+      "input_sha256": "4fde2cb048b55bb0aa21437fa0374413e551a9a984b24681300838ee1b842b81",
+      "path": "fixture-022.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-023",
+      "input_sha256": "4555d97a5b16fb0209d209649b69cec60ab408190a0497dacd92f898fa4c030d",
+      "path": "fixture-023.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "fixture-024",
+      "input_sha256": "f990b991bdf9824ea9176b71732a714d3e33831804ca9a96007f610033fc852a",
+      "path": "fixture-024.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-001",
+      "input_sha256": "d3e30aef37342303cc9b7c90387dfb2b4e5604ab93d1a31e3435020e419d9c62",
+      "path": "generated-001.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-002",
+      "input_sha256": "5a8de693a69c04564cdbfe8792c821a5aad641a1b4b10fe8f6bc2e1148ec6b0b",
+      "path": "generated-002.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-003",
+      "input_sha256": "4a22ed893edccbdc806dc053ecf7013d93bd7ed2ffa0e198ed9bad191f1c4074",
+      "path": "generated-003.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-004",
+      "input_sha256": "256ee192bb7377150d15a032be3ec3becbf80ba4addf210a88b9c09a20f329fd",
+      "path": "generated-004.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-005",
+      "input_sha256": "96b296365f3e21e59514fe78de4d7868dd46124e094ac7decff2b32b87ce204c",
+      "path": "generated-005.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-006",
+      "input_sha256": "c2c23c9d9b3538819e0b2185493e37f9bd3fd9a7402f60a01c54876494f94044",
+      "path": "generated-006.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-007",
+      "input_sha256": "47ca0257a7ba6b1bb08c84bac14477ff6c7901e156deab0a804094434b0990be",
+      "path": "generated-007.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-008",
+      "input_sha256": "bd8e68024f14587fa36b58a385f9f9f9990eac9bb2a91966aaa594c4a1fe003e",
+      "path": "generated-008.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-009",
+      "input_sha256": "9e911a802ffcdd84d6f2041ebe3eca4db6bc60623258a50025d80436df3c8ace",
+      "path": "generated-009.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-010",
+      "input_sha256": "4db814df27d9af10e3c5f13fa1438d7645d0c8dff65313f44e6ef67783a94331",
+      "path": "generated-010.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-011",
+      "input_sha256": "79752a4485c8bea15f9f48f3236dc661ce4918549f4c58f40ef7e04e3437c6e4",
+      "path": "generated-011.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-012",
+      "input_sha256": "2094433f948b3122e60b70d07eb8bd11856dd4db55d144b060dcf6e7e1dc4ba4",
+      "path": "generated-012.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-013",
+      "input_sha256": "84c2e399d6ff0d1a443860ffb599202d76d1bb32bb1f12c960c60cd9eef4daaf",
+      "path": "generated-013.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-014",
+      "input_sha256": "6d3d0c7bac06ba2b4af375366fc00ac00ce6990b63091db0a70eec775da91b62",
+      "path": "generated-014.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-015",
+      "input_sha256": "1cb5f70991c8fcbbebf860f094ce461b18953f7726b3d70e551827a0a494380c",
+      "path": "generated-015.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-016",
+      "input_sha256": "bce1d09ba6c3acb4d3c97e5711fbe6cf25fafa3bbe2a7b08a70c79c9e755955b",
+      "path": "generated-016.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-017",
+      "input_sha256": "3702a1ea66408e11e4869d06f17bb29d1c5c0541683fd42dbfe999381fb1e243",
+      "path": "generated-017.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-018",
+      "input_sha256": "c22c09d5ee1432f454996daf3ac6f98d2e21490186a4232c9e1100bc328ca4d4",
+      "path": "generated-018.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-019",
+      "input_sha256": "56b7d13978e2bb0f34ffcde62a7c7be09f50fe6002f5bf38a786e0928deb3a18",
+      "path": "generated-019.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-020",
+      "input_sha256": "fc9b2a8b46bceb0642083593729fbb91f7b3b6baddb512bac76bee88d7bd2141",
+      "path": "generated-020.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-021",
+      "input_sha256": "83668bb7604e4a9cbadadbb1044002fbcc00357b934cd0dc9639e561c6659b03",
+      "path": "generated-021.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-022",
+      "input_sha256": "82b036fcdc9fdb695a1e9b8117c77d61b0335be66a0a7651a44a4b566f946ea9",
+      "path": "generated-022.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-023",
+      "input_sha256": "0e3592d955521a3c8e79e787adba03920e01c0002a63200f5e0538e0809544be",
+      "path": "generated-023.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-024",
+      "input_sha256": "6c7f83c5e9e8be69607feede64d7a0a41f6ee68f779a7555c889a706169500a0",
+      "path": "generated-024.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-025",
+      "input_sha256": "b1692e4d5a168baa4e2a04ddd4fa70810d53273ec89747500f9dae4bc531fd01",
+      "path": "generated-025.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-026",
+      "input_sha256": "e3f940ac783e5b242453c9065b35a2e3ae719e2c520c9fc52cbbd1628efcf357",
+      "path": "generated-026.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-027",
+      "input_sha256": "b2aa2cab3b623cb136c0a1c02e332aea028843f8e2ba37b9d6077ffb9e4510d6",
+      "path": "generated-027.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-028",
+      "input_sha256": "b996ed82e0fe802941359c303b578fe9b9797575b2c87243c25902e61a1ab182",
+      "path": "generated-028.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-029",
+      "input_sha256": "dcf10cf38b2d9635173526ffda35ca7684c4b39c121eba5152fc5f0dab66d531",
+      "path": "generated-029.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-030",
+      "input_sha256": "10c94f027a3e30187c48dacbad87c3464229184debbaf5d1ff55aff558dd9baf",
+      "path": "generated-030.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-031",
+      "input_sha256": "14f45a2075c7ec31b3c61a2fecbfc9ec6bcb1d2d413985280315e2893f4a382b",
+      "path": "generated-031.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-032",
+      "input_sha256": "066ae9ededcd6797ab6c75856d30c138cead4391eb985fa8f0eeaf84c31bcbdb",
+      "path": "generated-032.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-033",
+      "input_sha256": "bb1cfa70bdd99bcbdd99e22822d1a5bde127457181e36c8143e6264138c3e69e",
+      "path": "generated-033.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-034",
+      "input_sha256": "5f6a2bc77c503d21990a67b0581aec9db0f13b769b92587c86bd99ce25f2bad1",
+      "path": "generated-034.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-035",
+      "input_sha256": "72eb0f27d6fb2708613bf1d58baddd84287922f0966c34430eacc117825ecbb9",
+      "path": "generated-035.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-036",
+      "input_sha256": "94dfe1938b9369518ddee91f3ef0be6acf3b4226231c33b7b53963663d8e64bd",
+      "path": "generated-036.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-037",
+      "input_sha256": "f0d68d78bbccd747e7183f0b11c93eb087cc740a1c7a401ad9a457661e0eb480",
+      "path": "generated-037.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-038",
+      "input_sha256": "d3b21cfe98b77edb720d8e169a6d90307c61c87b7d8809821d81827942d916ae",
+      "path": "generated-038.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-039",
+      "input_sha256": "c782a23aaeead4b5889d1eea00eb372bdfed661066a17b631c802773d334f2de",
+      "path": "generated-039.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-040",
+      "input_sha256": "3f9ddb21629c5b57c6f17edb4e98d7688f2deaa7bc451f0dade4c0f10efb2b15",
+      "path": "generated-040.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-041",
+      "input_sha256": "76f2f21597a70207e4392698be629f0d8b8f8cbaf3fecb840beedf08b72d1c67",
+      "path": "generated-041.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-042",
+      "input_sha256": "f7a85dad604a78345fd70d43d0e10967d68dd4224c992a73d05b380b4564a278",
+      "path": "generated-042.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-043",
+      "input_sha256": "11dbdfc63a89afeb7194759273fd2fb1dbfaf5d05a6b4b0de6e95f45fe41b8c0",
+      "path": "generated-043.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-044",
+      "input_sha256": "8436d526060c7263b6c6d01409f478f5d8441be4f25e7d55c7b96a886b9d5cfb",
+      "path": "generated-044.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-045",
+      "input_sha256": "94386bd92f5528d2971beecef6de7a8ec56cf880d6d676c4dbb35083136d308e",
+      "path": "generated-045.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-046",
+      "input_sha256": "a03b5e76bafaf595dac83f2e2f963f22c82cf5a76092e5797128c98c464c5b8f",
+      "path": "generated-046.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-047",
+      "input_sha256": "99d4f81318bc8045eb23c8ddcd705d9dcfa4030f148f732b29eb2fe85a2ff7f6",
+      "path": "generated-047.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-048",
+      "input_sha256": "c94e01002bd209ea1835b55f960c35e566dbb2094c05a7ae6aacd4ba0cdf1e77",
+      "path": "generated-048.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-049",
+      "input_sha256": "decdba867d5eebc9deb946650bbe65cb1f1910d90e5dd37c9d0f218f45a0d251",
+      "path": "generated-049.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-050",
+      "input_sha256": "3f471909082864467345af7bd3f852a29830688656cd017cb929cbb2882763f4",
+      "path": "generated-050.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-051",
+      "input_sha256": "88aa2340ec21a506aec6d96839871a69176748ab2b577f4e039d71d308a6e708",
+      "path": "generated-051.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-052",
+      "input_sha256": "f9e2ebf78d16859b2c8be1044b85ac3ac3430c7b0f4dd5b6e733ae8cd72be556",
+      "path": "generated-052.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-053",
+      "input_sha256": "982ab424e9be03553318bcbfaa84a6be623492dc81b1bda63d38f52792ad40a1",
+      "path": "generated-053.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-054",
+      "input_sha256": "28a0044eba7ca851b5eb5a1af10bf13e9454ec81bcde1995a679ac5b0e8567e9",
+      "path": "generated-054.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-055",
+      "input_sha256": "9eb5847ea4ddfb1694647fad12c66d6404d53fc0ae7b280924bd5dfc288f9065",
+      "path": "generated-055.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-056",
+      "input_sha256": "ad4747791704227aea3331d04bcd92f13810d25210ebfbd91c737f7f14db29ba",
+      "path": "generated-056.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-057",
+      "input_sha256": "0e3e63a4bd9e5c308d392dae2f3034e88f6802289d2d5bbb20cea54d8ebfc82c",
+      "path": "generated-057.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-058",
+      "input_sha256": "eef3a4f6854c804f18dd3bb00613ded4cbb7ddf32e2ee792c43f3c4d4ee0592c",
+      "path": "generated-058.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-059",
+      "input_sha256": "cb5298cc070bf28e958be320ea6ac1d458207528be74d050768d1ba1964ec9f0",
+      "path": "generated-059.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-060",
+      "input_sha256": "d06f54d341e4f86d2da5796c22a1f6af80bdbf083602690f959a6d8a9a0b9cac",
+      "path": "generated-060.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-061",
+      "input_sha256": "785a6401fd16d6d0e234b3232f5bdc1b01fcb0ec5e9fd2b5909e145758ef648f",
+      "path": "generated-061.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-062",
+      "input_sha256": "413308c4c2174c30142e9676cdb9ef3321bfca0abafd019d9e2090e5403c18d8",
+      "path": "generated-062.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-063",
+      "input_sha256": "87313159a13d2545473793c85fe8f684a8a2e8afb214f0825e3ca16e3f7cab69",
+      "path": "generated-063.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-064",
+      "input_sha256": "80b0797053a47180ed4504f2f93b259714841496de12ea649ce20bd041a25097",
+      "path": "generated-064.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-065",
+      "input_sha256": "3db707de0426db732fc8b3911f9250c4afaa2dc6a809c252b388c764d5f4a196",
+      "path": "generated-065.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-066",
+      "input_sha256": "8a91710e531e915d801255b0b11eda7e8f5588d8df3fa26350289a8b62448e97",
+      "path": "generated-066.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-067",
+      "input_sha256": "f485bb6bd7d335b79b652e719489fb82c22150abb8cc8997e1b609544b8337e3",
+      "path": "generated-067.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-068",
+      "input_sha256": "a1e7756c1fac4ceccc6711afbbd397dce2b80fb241643031d25b53d3f46dcdbe",
+      "path": "generated-068.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-069",
+      "input_sha256": "6fcfaf76fb077f57e36a55bdca8d289e5873b1f3ea5c7e4f1c02e1f432a4a6ba",
+      "path": "generated-069.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-070",
+      "input_sha256": "f2ac51aa8c46fa54f032e33d4cb2bdefb07bbf3e40a728b0ebda93c6741d5265",
+      "path": "generated-070.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-071",
+      "input_sha256": "b3039a25e759c53b67602d60cc61a61104d26b28570d2d8ab9843e4560f7a784",
+      "path": "generated-071.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-072",
+      "input_sha256": "c6fec7a0c92e20046b34217a2779e6eb2faee160f5a05f93a64ea3b4110e6398",
+      "path": "generated-072.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-073",
+      "input_sha256": "35e8715a20a083320150558d5419bf87356b46b78b37efe46687a8d312bcffb4",
+      "path": "generated-073.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-074",
+      "input_sha256": "e262f1d1a754c757bf1f932a66c819cc5e90f8507bed19e8d86268476d5b884f",
+      "path": "generated-074.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-075",
+      "input_sha256": "8fcad5390ac98f8af359d4765902a96521c6f342eebe3b74815f8ea7419640c0",
+      "path": "generated-075.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-076",
+      "input_sha256": "ca6bfec9b3d522c00602d792bebfe960865e75ffba10f2f336b2128ce2568068",
+      "path": "generated-076.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-077",
+      "input_sha256": "847b59f003629ad695ed99487f4d80eb22e0b4975fd98553a53cc8c0c9481aa6",
+      "path": "generated-077.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-078",
+      "input_sha256": "68cac67aeb60f4bde957b47dd536347c0804986f851577b6c8d72caf82a26f1f",
+      "path": "generated-078.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-079",
+      "input_sha256": "819ba6d16bc20946ffcda63bffe9ff05d7e6d8752d64707d18c56ee5d2316b80",
+      "path": "generated-079.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-080",
+      "input_sha256": "5c5b5d1b598f9701e3ba545f1bb38eb1984c39053ec22927df6b952d1a0d17e6",
+      "path": "generated-080.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-081",
+      "input_sha256": "86bd2f1ce44f2a34d4a94d80f42ac08a901b0601beaf731a3a0a314bd8414cee",
+      "path": "generated-081.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-082",
+      "input_sha256": "ca4ba3f416dce529e62876cd2d0b3b44d3ec90087e1835b23279085043abf8df",
+      "path": "generated-082.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-083",
+      "input_sha256": "220272609ca4e591ad4854482df1959676d212926316bcb2ec0654958c095d08",
+      "path": "generated-083.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-084",
+      "input_sha256": "395a70c1caa2ffd8885418161dba2565f82b8889852018c84cfc7cc25d541137",
+      "path": "generated-084.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-085",
+      "input_sha256": "7a4e24e1e354e690e2ca2c201e2c1a222eab1ca2d9a92e4a086108d0529f3bce",
+      "path": "generated-085.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-086",
+      "input_sha256": "7b4baf776ffaf91591f4b97d73c243cdf39cd5fd212cbbb1d8108f89b2b03192",
+      "path": "generated-086.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-087",
+      "input_sha256": "90a17e0e122477fd9590db2af33be156f2dc6519a9d79c7a3b131712b9154623",
+      "path": "generated-087.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-088",
+      "input_sha256": "731e19ceedb4c6578f8c2ab953c10be0e1c1d2b6d5d7cb37ec70ce148ec2e570",
+      "path": "generated-088.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-089",
+      "input_sha256": "fa76f51e0b5c64b46c58162a51a6bba054ef08da49994c8acf3bfa78bf25cfdc",
+      "path": "generated-089.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-090",
+      "input_sha256": "2e0940dc9bd519e010cb5bf3196d70b0bf5fecec79daeeee8583798aff31f913",
+      "path": "generated-090.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-091",
+      "input_sha256": "df4906d5d3cfc7e6048ea5eda055f4b9404f4e314d6734eee81b71f19466b218",
+      "path": "generated-091.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-092",
+      "input_sha256": "0703f4a20e47818d2d90f0c1e529c25a00c434fa7f0dfce17ea708ca15638822",
+      "path": "generated-092.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-093",
+      "input_sha256": "10f17da837cd470108578da38345be51436180f16b641dbfacabaeaaf852b05e",
+      "path": "generated-093.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-094",
+      "input_sha256": "9b679e3d6f67a26e7f8cfae17ab5c4f4c1fa4d1f9f5ef46d4ea167a76531790b",
+      "path": "generated-094.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-095",
+      "input_sha256": "2d0f6c0357761bf0d6b8a461860ff5c4346c06b1fd543ecd583df6f478b95882",
+      "path": "generated-095.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-096",
+      "input_sha256": "c3d2151be6597aee3caadc2cc4a56ae864b72fa22d7de396343c385469db7696",
+      "path": "generated-096.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-097",
+      "input_sha256": "06537d85dfe898098fff2baf904d9fb0c4c5ef27560f3b737d646fe3cdd372da",
+      "path": "generated-097.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-098",
+      "input_sha256": "fc0205a372bfb91d7cca2aba9ea0edbe24ad764dd7df5fe3aeb0a2b8cb314128",
+      "path": "generated-098.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-099",
+      "input_sha256": "7c6c818e5d3f4fa20437f4d1ae5a4bc48541fa5f788ef53f9b4accb2346a13ae",
+      "path": "generated-099.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-100",
+      "input_sha256": "8b66bbae036448c639480ba9d93e0309af3fe3ed643294a3166a408994e11c98",
+      "path": "generated-100.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-101",
+      "input_sha256": "735e20da2c1d7c51eb444cfc604804d51d70d13de054a17ed95b22828d7ff4e0",
+      "path": "generated-101.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-102",
+      "input_sha256": "0c5f48047728bd0f98804515d6fc0c8cbc19c420f6446cfea7856f0a4649e592",
+      "path": "generated-102.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-103",
+      "input_sha256": "7351138c2188feb185994e2387b20021021b019c8b8e1d07940cc71a08e00937",
+      "path": "generated-103.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-104",
+      "input_sha256": "f0f8917179a26b3d3933b610724bc3a091fee9686948c87bb367d5d1a67d109c",
+      "path": "generated-104.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-105",
+      "input_sha256": "669d7ac19dfec95af62cbd269ca55dc7048ede81253af73ab1f8c08b5818a840",
+      "path": "generated-105.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-106",
+      "input_sha256": "073da1d38f76432ce5e012d95ac43787b9bbbf16bcad5601036e9f79f1ccaac4",
+      "path": "generated-106.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-107",
+      "input_sha256": "8161a654ca9ddce0243baf6161eb1a726f49b6e9cdefa20b3d4fe2cab5cf221e",
+      "path": "generated-107.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-108",
+      "input_sha256": "3ddcdedfdb35bf1347d817565a565998703943bee7106cc93d266ba808819ae4",
+      "path": "generated-108.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-109",
+      "input_sha256": "ddda7a7bc53bc6a478488430cb1af0d818dcb9ac6868771f7530d38e8c7bd040",
+      "path": "generated-109.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-110",
+      "input_sha256": "dfbfc2cd6d91c0c23ee26c45b004c27011a103073eb8a97513a9f29bee67db30",
+      "path": "generated-110.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-111",
+      "input_sha256": "c12cd95ddc8512a7ea67c97980afc265bc9e79808ecad01f00e2e277f8dca580",
+      "path": "generated-111.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-112",
+      "input_sha256": "dce1423d3ba0259fbfecbc3825e11a7891421dbca7a89b8d2f54aa79ec7cfead",
+      "path": "generated-112.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-113",
+      "input_sha256": "3e2710dd16036b46ad3c628d62fc530cb3737f5fcc045ad0336dc6d004421dc9",
+      "path": "generated-113.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-114",
+      "input_sha256": "6ae36b72124a01a30d9e694248edf0721ebb8796274a77494684358ba72cf6da",
+      "path": "generated-114.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-115",
+      "input_sha256": "f3a282e59fecbbeea9e6fe7cb2541602552682ba43466150fb142a9a40886cff",
+      "path": "generated-115.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-116",
+      "input_sha256": "f07f6527cd2673453d55377bf46e941082138ad0044d93e03d963518d26a775c",
+      "path": "generated-116.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-117",
+      "input_sha256": "144ba1c84e7fdbdf87712fca880c39292c5e3e1ebc7db4c4a0b1b5e7766ce141",
+      "path": "generated-117.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-118",
+      "input_sha256": "0684f060e6c858964803c1eb78b1691cfa5982c0de76c3ed39a71c0ffb854800",
+      "path": "generated-118.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-119",
+      "input_sha256": "781a5b2791539d4a41eda8e9632795ffd79b4a317d6ba3e2f1d2926ab380ae63",
+      "path": "generated-119.json",
+      "reason": "outside constructor scope"
+    },
+    {
+      "eligible": false,
+      "id": "generated-120",
+      "input_sha256": "d533b68c915ca14a8dc0dee32915d08e64dd451ef0ce6dc7737a4093270bc3c9",
+      "path": "generated-120.json",
+      "reason": "outside constructor scope"
+    }
+  ],
+  "memory_measurement": null,
+  "native_validation": false,
+  "ordinary_baseline": "same-code generic exact recurrence, same supports and joint quotient; not external solver",
+  "speedup_claim": false,
+  "trial_count": 20
+}

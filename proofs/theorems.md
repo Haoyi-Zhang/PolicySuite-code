@@ -46,6 +46,18 @@ For one snapshot, each disjoint region has at most two nonempty obligations. Its
 
 For two such snapshots, let k_0,k_1 be their individual optima and let lambda be the maximum number of pairwise disjoint nonempty supports in their union. Each individual optimum equals a packing, so max(k_0,k_1) <= lambda. The union of two individually optimal suites is adequate. Therefore lambda <= OPT <= k_0+k_1 <= 2 max(k_0,k_1) <= 2 lambda.
 
+Executable connection: `src/optimize.py --fa-local` now implements the one-
+snapshot construction after complete validated support tabulation and the joint
+activation quotient. It scans each rule's two canonical local supports; for an
+intersection it selects its least representative and one packing support,
+otherwise one representative/support per nonempty member. The disjoint visible
+groups proved above establish adequacy and an equally sized disjoint packing.
+Quotient lifting preserves their intersections and nonemptiness by section 1.
+The unchanged checker reconstructs original-domain supports, so it accepts
+without trusting that constructor's visibility diagnosis. The mode is explicit
+and refuses other snapshot/combiner/profile combinations; historical default
+certificates and the two-snapshot gap remain unchanged.
+
 The factor 2 is sharp. Take Q={a,b,c}. Snapshot A is FA with ordered rules P:(true at a,b; error at c), D:(true at b), P:(true at a,b,c). Its only nonempty distinct local supports are the first rule's flip {a,b} and deletion {b,c}. Later rules are originally masked. Snapshot B has one P rule true at a,c, whose flip and deletion support is {a,c}. The three pairwise intersecting edges of a triangle require two requests and admit a packing of only one support. All original true scopes in each snapshot are laminar. k disjoint copies have OPT=2k and lambda=k. The fractional hitting-set optimum per triangle is 3/2: assigning 1/2 to each request is feasible, and summing the three constraints proves the lower bound. This invalidates tight packing under public errors, not polynomial-time solvability of every two-snapshot error case; the latter is not settled here.
 
 ## 6. Three snapshots and conflict-graph limitations

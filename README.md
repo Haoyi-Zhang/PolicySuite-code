@@ -8,6 +8,12 @@ For two snapshots whose inclusion-minimal nonempty mutation supports are disjoin
 
 Written proofs also establish a sharp factor-two disjoint-packing gap for two first-applicable snapshots with public errors, three-snapshot NP-completeness even for disjoint error-free permit rules, and output-preserving DO/FA revisions whose local minimum grows from one to n (the retained all-permit PO contrast grows from zero to n). General proofs are mathematical text, not proof-assistant mechanizations.
 
+An explicit `--fa-local` route now constructs the tight one-snapshot
+first-applicable packing even when public errors make flip/delete supports
+incomparable. It requires the complete local profile and refuses other scopes.
+The default route and all historical campaign proof classes remain unchanged.
+This is a theorem-to-production connection, not a new set-cover algorithm.
+
 The retained campaign has **144 owned cases**: 120 generated and 24 fixtures. There are 111 packing and 33 recurrence certificates. All 144 passed the separately coded checker. Native full-XACML replay is outside the retained model because the artifact has no semantics-preserving importer. See `proofs/theorems.md`, the claim ledger, and `docs/limitations.md` for precise boundaries.
 
 ## Run from a clean extraction
@@ -28,6 +34,39 @@ python src/checker.py data/cases/fixture-017.json /tmp/conflict-suite.json
 ```
 
 The checker exits zero on acceptance and two on rejection. For an uncovered detectable mutation, its JSON output includes the first missed mutation in declared order, the least distinguishing request index, the concrete request, and the unequal reference/mutant observations. Empty supports are explicitly inventoried as equivalent on the finite domain, not silently counted as covered.
+
+For the public-error single-snapshot route and its ordinary exact comparison:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python -B src/optimize.py data/cases/fixture-007.json fa-suite.json --fa-local
+PYTHONDONTWRITEBYTECODE=1 python -B src/checker.py data/cases/fixture-007.json fa-suite.json
+PYTHONDONTWRITEBYTECODE=1 python -B src/optimize.py data/cases/fixture-007.json ordinary-suite.json --force-dp
+PYTHONDONTWRITEBYTECODE=1 python -B tests/test_fa_constructor.py -v
+PYTHONDONTWRITEBYTECODE=1 python -B src/fa_comparison.py --cases data/cases --work fa-wire-work --out fa-cost-results
+```
+
+Choose fresh certificate paths and fresh disjoint cost directories. The same-
+information ordinary exact baseline is the existing general recurrence, not an
+external or independently implemented optimizer. Both obtain the full declared
+table/inventory and the same joint quotient; the separately coded checker
+recomputes all supports. The six constructor methods connect the existing
+2,971-case theorem domain to the actual production entry, plus named scope,
+quotient, witness and null controls. A portable 144-case default/forced replay
+still reproduces historical structures, 111/33 proof classes and 32/25 greedy
+excess counts. It does not claim Linux resource-guard execution.
+
+`results/fa-local/` records five alternating paired repetitions on the two
+eligible **unchanged** retained cases, fixtures 004 and 007. All twenty proof
+checks pass; both routes have optimum one. Ordinary DAG states are 2/3, while
+the constructor uses none. Timed phases include input reading, all producer
+semantics/quotient/selection work, certificate file roundtrip, and independent
+semantic/proof checking. Process startup/imports, experiment packaging and
+native-policy execution are excluded. Observed tiny CPU samples are zero at
+the timer's effective resolution; RSS is unmeasured. No speedup or deployment-
+cost claim is drawn. `results/fa-local-checks/` preserves actual public command
+logs, inputs, certificates, verdicts and source/environment bindings. Historical
+measurements remain separate. See `docs/fa-local.md` for the proof connection,
+cost scope and unresolved native-translation obligations.
 
 The retained refinement interpretation has a separate read-only reconciliation command:
 
@@ -80,7 +119,7 @@ Case inputs and deterministic results must agree exactly as JSON objects. CPU ti
 
 The original campaign records 5,522,547 conservative checking steps and 3.347 summed process CPU seconds. Workloads actually use at most 32 requests, 21 rules per snapshot, and 84 declared mutations; supported input caps are not measured scale. The one-worker finite run is not a production performance study. The retained clean-extraction result is `results/reproduction.json`; per-run resource observations are in `results/resource-accounting.json`. Original measurements and fresh measurements are separate records.
 
-## License and assistance
+## License
 
 Original repository materials use the accompanying MIT license. No third-party solver, Balana code, native policy corpus, or external research PDF is redistributed here. The companion paper package's unmodified IEEE template assets retain their own notices.
 
@@ -89,7 +128,16 @@ Original repository materials use the accompanying MIT license. No third-party s
 The complete project packet includes a paper-side release checker:
 
 ```sh
-python paper/audit_references.py --paper-dir paper --output-dir artifact/results
+python -B paper/audit_references.py --paper-dir paper --output-dir paper-audit-new
 ```
 
-It checks the 61-entry bibliography, TeX citation use, DOI/title/key uniqueness, the canonical Hopcroft and Karp identifiers, the 61-item BBL, the 12-page PDF, and source-to-PDF modification order. This local command does not retrieve publisher records or establish citation entailment; emitted rows are labeled `local_structure_only`. Existing retained reference-audit files document an earlier run, not a new source verification. This optional check belongs to the complete project package; standalone scientific reproduction remains independent of `paper/`.
+It checks 61 scholarly references, TeX citation use, DOI/title/key uniqueness,
+the canonical Hopcroft and Karp identifiers, the emitted bibliography, the
+supplied 12-page budget, and source-to-PDF modification order. IEEE style-control
+entries are counted separately. PDF tool output is decoded explicitly as UTF-8.
+The manuscript has 12 pages and its supplement has three. Generate a matching
+BBL before running the command and choose a fresh output path. Results are
+labeled `local_structure_only`: publisher identity and cited-sentence support
+require separate source reading. Retained audit records remain historical
+observations. This optional check belongs to the complete project packet;
+standalone scientific reproduction is independent of the paper directory.

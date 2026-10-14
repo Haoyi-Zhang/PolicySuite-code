@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "D:\\CodexProjects\\wg-check\\substantive-library\\P013\\artifact\\src\\fa_comparison.py",
+    "--cases",
+    "D:\\CodexProjects\\wg-check\\substantive-library\\P013\\artifact\\data\\cases",
+    "--work",
+    "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\substantive_library_completion\\P013\\cost-wire",
+    "--out",
+    "D:\\CodexProjects\\wg-check\\substantive-library\\P013\\artifact\\results\\fa-local"
+  ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "bytecode_disabled": true,
+    "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "source_sha256": {
+    "src/checker.py": "bbd0df3fe3104a970542cef4ced264d4bd3d5d16cd23be75d307553735831c11",
+    "src/fa_comparison.py": "8056ce69128feae46a2deb4568a75f7528892e048ee859b8e90550795f255438",
+    "src/optimize.py": "6cdb80e7757d0c454441a532fbc2dbbec2bc5193a4fef48162c54d28a3cd5116",
+    "src/semantics.py": "c577e91cf5e66f25166f6eb1f2086b880eb1840e37dbf32ce7f8bc2a78132d21"
+  }
+}

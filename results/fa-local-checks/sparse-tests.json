@@ -1,0 +1,33 @@
+{
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "D:\\CodexProjects\\wg-check\\substantive-library\\P013\\artifact\\tests\\test_sparse_transpose.py",
+    "-v"
+  ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "exit_code": 0,
+  "runner_sha256": "07573fd71bbf4dabbc7d54074a0b79f5dbe878fbb2f9764d3910ead1721ce1e7",
+  "source_sha256": {
+    "src/baselines.py": "41c68ebaf67f124b00a293525a2b86f3d6e1bd0f81d403f3bdbafaf8b024bb96",
+    "src/checker.py": "bbd0df3fe3104a970542cef4ced264d4bd3d5d16cd23be75d307553735831c11",
+    "src/fa_comparison.py": "8056ce69128feae46a2deb4568a75f7528892e048ee859b8e90550795f255438",
+    "src/generate.py": "f76e8466707755ce284e5db090e1e72f9bf92bd239032729a8afeb48fe7b14e9",
+    "src/kernel_baseline.py": "a8ec1bf3a4f0fe3c983130c76ac51c814139c9049f9b7c93243a2128f8501614",
+    "src/optimize.py": "6cdb80e7757d0c454441a532fbc2dbbec2bc5193a4fef48162c54d28a3cd5116",
+    "src/semantics.py": "c577e91cf5e66f25166f6eb1f2086b880eb1840e37dbf32ce7f8bc2a78132d21",
+    "tests/test_core.py": "b95ac72605135f4b6226879a69f45a6466faafdd5b458da78b9b303466aad315",
+    "tests/test_error_boundary.py": "e22c72e33cf830112506ae22714bf9f39874490536fac0a5a601a164fdfd10db",
+    "tests/test_fa_constructor.py": "db1d741ba4d1422b835621d4c03af83db868a88d5cc507f4b007801075d2dab5",
+    "tests/test_input_contract.py": "edf807071791b502996d8ffb73a55edf3300de1db0184e9164bc6382f2da0b1a",
+    "tests/test_retained_replay.py": "826e8999aa043c65eba663f8174f938c95b0ed6c2fd6edeb32a29eeddfd666e6",
+    "tests/test_sparse_transpose.py": "ed2d6a88d6574a3cea00d895776c501d2ac5fe57e19e544dcd5848169efba9cc"
+  },
+  "stderr": "test_clipped_bits_and_negative_integer_direct_calls (__main__.SparseTransposeTests.test_clipped_bits_and_negative_integer_direct_calls) ... ok\ntest_complete_certificates_against_subset_reference (__main__.SparseTransposeTests.test_complete_certificates_against_subset_reference) ... ok\ntest_exact_state_and_deadline_boundaries (__main__.SparseTransposeTests.test_exact_state_and_deadline_boundaries) ... ok\ntest_first_representative_and_original_mutation_positions (__main__.SparseTransposeTests.test_first_representative_and_original_mutation_positions) ... ok\ntest_real_policy_supports_checker_and_canonical_witness (__main__.SparseTransposeTests.test_real_policy_supports_checker_and_canonical_witness) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.048s\n\nOK\n",
+  "stdout": ""
+}

@@ -1,0 +1,150 @@
+{
+  "certificate": {
+    "case_id": "fixture-007",
+    "cpu_seconds": 0.0,
+    "equivalent": [
+      "s0/r01/flip",
+      "s0/r01/delete",
+      "s0/r02/flip",
+      "s0/r02/delete"
+    ],
+    "kind": "recurrence",
+    "optimizer_states": 3,
+    "request_regions": 3,
+    "root": 3,
+    "states": [
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ]
+    ],
+    "suite": [
+      1
+    ]
+  },
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "D:\\CodexProjects\\wg-check\\substantive-library\\P013\\artifact\\src\\checker.py",
+    "D:\\CodexProjects\\wg-check\\substantive-library\\P013\\artifact\\data\\cases\\fixture-007.json",
+    "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\private\\substantive_library_completion\\P013\\public-dp.json"
+  ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "exit_code": 0,
+  "input_case": {
+    "family": "fixture",
+    "id": "fixture-007",
+    "metadata": {
+      "expected": 1,
+      "phenomenon": "incomparable error supports"
+    },
+    "mutations": [
+      {
+        "id": "s0/r00/flip",
+        "op": "flip",
+        "rule": 0,
+        "snapshot": 0
+      },
+      {
+        "id": "s0/r00/delete",
+        "op": "delete",
+        "rule": 0,
+        "snapshot": 0
+      },
+      {
+        "id": "s0/r01/flip",
+        "op": "flip",
+        "rule": 1,
+        "snapshot": 0
+      },
+      {
+        "id": "s0/r01/delete",
+        "op": "delete",
+        "rule": 1,
+        "snapshot": 0
+      },
+      {
+        "id": "s0/r02/flip",
+        "op": "flip",
+        "rule": 2,
+        "snapshot": 0
+      },
+      {
+        "id": "s0/r02/delete",
+        "op": "delete",
+        "rule": 2,
+        "snapshot": 0
+      }
+    ],
+    "policies": [
+      {
+        "combiner": "FA",
+        "rules": [
+          {
+            "effect": "P",
+            "match": "112"
+          },
+          {
+            "effect": "P",
+            "match": "101"
+          },
+          {
+            "effect": "D",
+            "match": "010"
+          }
+        ]
+      }
+    ],
+    "profile": "local",
+    "provenance": "owned generated finite input",
+    "requests": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "input_sha256": "2bd3f87cc3b7d08c811606e22b327f8b0bfb8f277df94d2803a159fa45c93944",
+  "runner_sha256": "07573fd71bbf4dabbc7d54074a0b79f5dbe878fbb2f9764d3910ead1721ce1e7",
+  "source_sha256": {
+    "src/baselines.py": "41c68ebaf67f124b00a293525a2b86f3d6e1bd0f81d403f3bdbafaf8b024bb96",
+    "src/checker.py": "bbd0df3fe3104a970542cef4ced264d4bd3d5d16cd23be75d307553735831c11",
+    "src/fa_comparison.py": "8056ce69128feae46a2deb4568a75f7528892e048ee859b8e90550795f255438",
+    "src/generate.py": "f76e8466707755ce284e5db090e1e72f9bf92bd239032729a8afeb48fe7b14e9",
+    "src/kernel_baseline.py": "a8ec1bf3a4f0fe3c983130c76ac51c814139c9049f9b7c93243a2128f8501614",
+    "src/optimize.py": "6cdb80e7757d0c454441a532fbc2dbbec2bc5193a4fef48162c54d28a3cd5116",
+    "src/semantics.py": "c577e91cf5e66f25166f6eb1f2086b880eb1840e37dbf32ce7f8bc2a78132d21",
+    "tests/test_core.py": "b95ac72605135f4b6226879a69f45a6466faafdd5b458da78b9b303466aad315",
+    "tests/test_error_boundary.py": "e22c72e33cf830112506ae22714bf9f39874490536fac0a5a601a164fdfd10db",
+    "tests/test_fa_constructor.py": "db1d741ba4d1422b835621d4c03af83db868a88d5cc507f4b007801075d2dab5",
+    "tests/test_input_contract.py": "edf807071791b502996d8ffb73a55edf3300de1db0184e9164bc6382f2da0b1a",
+    "tests/test_retained_replay.py": "826e8999aa043c65eba663f8174f938c95b0ed6c2fd6edeb32a29eeddfd666e6",
+    "tests/test_sparse_transpose.py": "ed2d6a88d6574a3cea00d895776c501d2ac5fe57e19e544dcd5848169efba9cc"
+  },
+  "stderr": "",
+  "stdout": "{\"accepted\": true, \"case\": \"fixture-007\", \"checker_steps\": 67, \"equivalent\": 4, \"kind\": \"recurrence\", \"minimum_size\": 1, \"non_equivalent\": 2}\n"
+}

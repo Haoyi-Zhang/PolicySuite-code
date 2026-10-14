@@ -85,12 +85,49 @@ def dynamic_certificate(case:dict,supports:list[int],max_states:int=100000,secon
         suite.append(chosen[0]);u &= ~chosen[1]
     return dict(kind='recurrence',suite=sorted(suite),root=full,states=[[u,*dp[u]] for u in sorted(dp)],optimizer_states=len(dp))
 
-def optimize(case:dict,force_dp=False)->dict:
+def fa_local_certificate(case:dict,supports:list[int])->dict:
+    """Construct the one-FA local packing after validated semantic tabulation.
+
+    The complete local inventory has flip/delete at positions 2*i and 2*i+1.
+    Their union is inside one visible-rule region; distinct regions are disjoint.
+    This does not admit two snapshots or extended/declared mutation profiles.
+    """
+    if (case['profile']!='local' or len(case['policies'])!=1
+            or case['policies'][0]['combiner']!='FA'):
+        raise ValueError('FA constructor requires one FA snapshot and complete local profile')
+    rules=len(case['policies'][0]['rules'])
+    if len(supports)!=2*rules:
+        raise ValueError('FA constructor requires all local supports')
+    suite=[];packing=[];seen=0
+    for i in range(rules):
+        flip,delete=2*i,2*i+1
+        group=supports[flip]|supports[delete]
+        if seen&group:
+            raise RuntimeError('FA visibility groups must be disjoint')
+        seen|=group
+        common=supports[flip]&supports[delete]
+        if common:
+            suite.append(next(bits(common)))
+            packing.append(case['mutations'][flip]['id'])
+        else:
+            for j in (flip,delete):
+                if supports[j]:
+                    suite.append(next(bits(supports[j])))
+                    packing.append(case['mutations'][j]['id'])
+    if len(set(suite))!=len(suite):
+        raise RuntimeError('FA constructor request-disjointness invariant')
+    return dict(kind='packing',suite=sorted(suite),packing=packing,
+                optimizer_states=0,fa_rule_groups=rules)
+
+def optimize(case:dict,force_dp=False,fa_local=False)->dict:
+    if force_dp and fa_local:
+        raise ValueError('choose either ordinary recurrence or FA constructor')
     t=time.process_time();a=incidence(case);supports=a['supports']
     representatives=[region[0] for region in a['regions']]
     reduced=dict(case, requests=[case['requests'][x] for x in representatives])
     projected=[sum(1<<j for j,x in enumerate(representatives) if s>>x&1) for s in supports]
-    cert=None if force_dp else matching_certificate(reduced,projected)
+    cert=(fa_local_certificate(reduced,projected) if fa_local else
+          None if force_dp else matching_certificate(reduced,projected))
     if cert is None:cert=dynamic_certificate(reduced,projected)
     cert['suite']=sorted(representatives[x] for x in cert['suite'])
     cert.update(case_id=case['id'],equivalent=[m['id'] for m,s in zip(case['mutations'],supports) if not s],
@@ -98,8 +135,13 @@ def optimize(case:dict,force_dp=False)->dict:
     return cert
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('case');ap.add_argument('output');ap.add_argument('--force-dp',action='store_true');a=ap.parse_args()
-    case=json.loads(Path(a.case).read_text());cert=optimize(case,a.force_dp)
+    ap=argparse.ArgumentParser();ap.add_argument('case');ap.add_argument('output')
+    mode=ap.add_mutually_exclusive_group()
+    mode.add_argument('--force-dp',action='store_true')
+    mode.add_argument('--fa-local',action='store_true',
+                      help='one FA snapshot, complete local profile: use its constructive packing')
+    a=ap.parse_args()
+    case=json.loads(Path(a.case).read_text());cert=optimize(case,a.force_dp,a.fa_local)
     Path(a.output).write_text(json.dumps(cert,indent=2)+'\n')
     print(json.dumps(dict(case=case['id'],size=len(cert['suite']),kind=cert['kind'])))
 if __name__=='__main__':main()
