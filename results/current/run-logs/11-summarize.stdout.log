@@ -1,0 +1,1 @@
+{"cases": 144, "detectable": 3108, "equivalent": 1754, "greedy_excess_cases": 32, "kernel_excess_cases": 25, "max_case_cpu_seconds": 0.152563244, "max_case_encoding_bytes": 8925, "max_certificate_bytes": 1459, "max_states": 39, "mutations": 4862}

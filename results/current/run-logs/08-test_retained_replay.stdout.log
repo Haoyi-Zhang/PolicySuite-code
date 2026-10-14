@@ -1,0 +1,1 @@
+{"cases": 144, "checker_steps": 4849368, "detectable": 3108, "equivalent": 1754, "forced_recurrence_checks": 144, "greedy_excess": 32, "kernel_greedy_excess": 25, "linux_resource_guards_exercised": false, "packing": 111, "recurrence": 33, "wall_seconds": 3.358422422000004}

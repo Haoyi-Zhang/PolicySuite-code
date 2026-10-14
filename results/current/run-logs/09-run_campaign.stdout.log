@@ -1,0 +1,1 @@
+{"case_count": 144, "checker_steps_upper_bound": 5522547, "corruptions_rejected": 218, "cpu_seconds": 4.467832490999999, "failed": 0, "main_recurrence_states": 559, "main_request_regions": 2191, "packing_cases": 111, "passed": 144, "peak_rss_kib": 17984, "random_repetitions": 20, "recurrence_cases": 33, "workers": 1}
