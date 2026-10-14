@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+    "-B",
+    "src/summarize.py",
+    "--results",
+    "/home/runner/work/PolicySuite/PolicySuite/.scientific-output/replay/results",
+    "--output",
+    "/home/runner/work/PolicySuite/PolicySuite/.scientific-output/replay/results/derived"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.09264090900000355,
+  "timeout_seconds": 45
+}

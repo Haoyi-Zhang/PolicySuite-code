@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+    "-B",
+    "tests/test_core.py"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 1.0093254559999991,
+  "timeout_seconds": 45
+}

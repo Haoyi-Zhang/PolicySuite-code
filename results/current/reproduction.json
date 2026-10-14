@@ -1,0 +1,23 @@
+{
+  "accepted": true,
+  "campaign_checker_steps_upper_bound": 5522547,
+  "campaign_cpu_seconds": 4.467832490999999,
+  "campaign_passed": 144,
+  "claim": "retained finite reproducibility; not external review or a general mechanized proof",
+  "deterministic_csv_outputs_equal": 4,
+  "deterministic_json_outputs_equal": 296,
+  "excluded_nondeterministic_fields": [
+    "certificate_bytes",
+    "cpu_seconds",
+    "max_case_cpu_seconds",
+    "max_certificate_bytes",
+    "peak_rss_kib",
+    "wall_seconds"
+  ],
+  "independently_coded_checker_used": true,
+  "offline": true,
+  "owned_inputs_equal": 144,
+  "proof_inputs_equal": 4,
+  "wall_seconds": 13.984450703999997,
+  "workers": 1
+}

@@ -1,0 +1,2302 @@
+{
+  "cases": [
+    {
+      "detectable": 0,
+      "family": "fixture",
+      "id": "fixture-001",
+      "kernel_obligations": 0,
+      "killed": 0,
+      "size": 0,
+      "suite": []
+    },
+    {
+      "detectable": 3,
+      "family": "fixture",
+      "id": "fixture-002",
+      "kernel_obligations": 1,
+      "killed": 3,
+      "size": 1,
+      "suite": [
+        0
+      ]
+    },
+    {
+      "detectable": 2,
+      "family": "fixture",
+      "id": "fixture-003",
+      "kernel_obligations": 1,
+      "killed": 2,
+      "size": 1,
+      "suite": [
+        0
+      ]
+    },
+    {
+      "detectable": 2,
+      "family": "fixture",
+      "id": "fixture-004",
+      "kernel_obligations": 1,
+      "killed": 2,
+      "size": 1,
+      "suite": [
+        0
+      ]
+    },
+    {
+      "detectable": 19,
+      "family": "fixture",
+      "id": "fixture-005",
+      "kernel_obligations": 4,
+      "killed": 19,
+      "size": 4,
+      "suite": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "detectable": 3,
+      "family": "fixture",
+      "id": "fixture-006",
+      "kernel_obligations": 1,
+      "killed": 3,
+      "size": 1,
+      "suite": [
+        0
+      ]
+    },
+    {
+      "detectable": 2,
+      "family": "fixture",
+      "id": "fixture-007",
+      "kernel_obligations": 2,
+      "killed": 2,
+      "size": 1,
+      "suite": [
+        1
+      ]
+    },
+    {
+      "detectable": 12,
+      "family": "fixture",
+      "id": "fixture-008",
+      "kernel_obligations": 6,
+      "killed": 12,
+      "size": 3,
+      "suite": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "detectable": 8,
+      "family": "fixture",
+      "id": "fixture-009",
+      "kernel_obligations": 4,
+      "killed": 8,
+      "size": 2,
+      "suite": [
+        0,
+        3
+      ]
+    },
+    {
+      "detectable": 8,
+      "family": "fixture",
+      "id": "fixture-010",
+      "kernel_obligations": 4,
+      "killed": 8,
+      "size": 2,
+      "suite": [
+        0,
+        2
+      ]
+    },
+    {
+      "detectable": 8,
+      "family": "fixture",
+      "id": "fixture-011",
+      "kernel_obligations": 4,
+      "killed": 8,
+      "size": 2,
+      "suite": [
+        0,
+        1
+      ]
+    },
+    {
+      "detectable": 12,
+      "family": "fixture",
+      "id": "fixture-012",
+      "kernel_obligations": 2,
+      "killed": 12,
+      "size": 2,
+      "suite": [
+        0,
+        1
+      ]
+    },
+    {
+      "detectable": 6,
+      "family": "fixture",
+      "id": "fixture-013",
+      "kernel_obligations": 2,
+      "killed": 6,
+      "size": 2,
+      "suite": [
+        0,
+        1
+      ]
+    },
+    {
+      "detectable": 12,
+      "family": "fixture",
+      "id": "fixture-014",
+      "kernel_obligations": 4,
+      "killed": 12,
+      "size": 4,
+      "suite": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "fixture",
+      "id": "fixture-015",
+      "kernel_obligations": 8,
+      "killed": 24,
+      "size": 8,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 48,
+      "family": "fixture",
+      "id": "fixture-016",
+      "kernel_obligations": 16,
+      "killed": 48,
+      "size": 16,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "detectable": 8,
+      "family": "fixture",
+      "id": "fixture-017",
+      "kernel_obligations": 2,
+      "killed": 8,
+      "size": 2,
+      "suite": [
+        1,
+        2
+      ]
+    },
+    {
+      "detectable": 6,
+      "family": "fixture",
+      "id": "fixture-018",
+      "kernel_obligations": 3,
+      "killed": 6,
+      "size": 2,
+      "suite": [
+        0,
+        1
+      ]
+    },
+    {
+      "detectable": 6,
+      "family": "fixture",
+      "id": "fixture-019",
+      "kernel_obligations": 2,
+      "killed": 6,
+      "size": 2,
+      "suite": [
+        0,
+        1
+      ]
+    },
+    {
+      "detectable": 8,
+      "family": "fixture",
+      "id": "fixture-020",
+      "kernel_obligations": 4,
+      "killed": 8,
+      "size": 2,
+      "suite": [
+        0,
+        3
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "fixture",
+      "id": "fixture-021",
+      "kernel_obligations": 3,
+      "killed": 20,
+      "size": 3,
+      "suite": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "detectable": 4,
+      "family": "fixture",
+      "id": "fixture-022",
+      "kernel_obligations": 2,
+      "killed": 4,
+      "size": 2,
+      "suite": [
+        0,
+        2
+      ]
+    },
+    {
+      "detectable": 15,
+      "family": "fixture",
+      "id": "fixture-023",
+      "kernel_obligations": 3,
+      "killed": 15,
+      "size": 3,
+      "suite": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "detectable": 18,
+      "family": "fixture",
+      "id": "fixture-024",
+      "kernel_obligations": 4,
+      "killed": 18,
+      "size": 4,
+      "suite": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-001",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        2,
+        7,
+        11,
+        13,
+        27
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-002",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        7,
+        9,
+        21
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-003",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        2,
+        7,
+        8,
+        9,
+        14
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-004",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        7,
+        9,
+        23,
+        10,
+        21
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-005",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        29
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-006",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        3,
+        4,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-007",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        4,
+        5,
+        13,
+        7,
+        10
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-008",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        3,
+        7,
+        11,
+        14
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-009",
+      "kernel_obligations": 10,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        2,
+        11,
+        28,
+        7,
+        25
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-010",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        2,
+        3,
+        7,
+        8,
+        4,
+        6
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-011",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        4,
+        5,
+        31,
+        11,
+        16
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-012",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        3,
+        12,
+        8,
+        9,
+        20
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-013",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        2,
+        9,
+        13,
+        4,
+        6
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-014",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        31
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-015",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        2,
+        8,
+        10,
+        30,
+        3
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-016",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        8,
+        14,
+        25
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-017",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        9,
+        12,
+        3
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-018",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        2,
+        3,
+        12,
+        17,
+        1,
+        11
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-019",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        3,
+        13,
+        24,
+        2,
+        9,
+        17
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-deny",
+      "id": "generated-020",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        1,
+        2,
+        3,
+        7,
+        0,
+        9,
+        12
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-021",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        3,
+        11,
+        13,
+        2,
+        6
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "masked-permit",
+      "id": "generated-022",
+      "kernel_obligations": 11,
+      "killed": 20,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        4,
+        12,
+        5
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-023",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        3,
+        8,
+        14,
+        30,
+        1,
+        2
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "masked-permit",
+      "id": "generated-024",
+      "kernel_obligations": 10,
+      "killed": 20,
+      "size": 6,
+      "suite": [
+        0,
+        6,
+        8,
+        18,
+        2,
+        9
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-025",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        4,
+        10,
+        13,
+        26
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-026",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        1,
+        2,
+        8,
+        11,
+        17,
+        15
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-027",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        6,
+        10
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-028",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        2,
+        3,
+        14,
+        22,
+        7,
+        8
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-029",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        6,
+        20,
+        22
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-030",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        3,
+        6,
+        7,
+        15,
+        1
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "masked-permit",
+      "id": "generated-031",
+      "kernel_obligations": 11,
+      "killed": 20,
+      "size": 6,
+      "suite": [
+        1,
+        2,
+        3,
+        8,
+        13,
+        10
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-032",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        13
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-033",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        2,
+        8,
+        12,
+        13,
+        14,
+        18
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "masked-permit",
+      "id": "generated-034",
+      "kernel_obligations": 11,
+      "killed": 20,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        10,
+        11,
+        22,
+        23
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-035",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        1,
+        2,
+        8,
+        11,
+        12,
+        0
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-036",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        2,
+        5,
+        20,
+        4,
+        10
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-037",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        3,
+        5,
+        12,
+        10,
+        21
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-038",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        5,
+        8,
+        20,
+        2,
+        4
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-039",
+      "kernel_obligations": 11,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        2,
+        4,
+        29,
+        31,
+        6
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "masked-permit",
+      "id": "generated-040",
+      "kernel_obligations": 12,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        2,
+        3,
+        11,
+        19,
+        25
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "ordered-revision",
+      "id": "generated-041",
+      "kernel_obligations": 4,
+      "killed": 16,
+      "size": 4,
+      "suite": [
+        3,
+        4,
+        9,
+        10
+      ]
+    },
+    {
+      "detectable": 17,
+      "family": "ordered-revision",
+      "id": "generated-042",
+      "kernel_obligations": 5,
+      "killed": 17,
+      "size": 5,
+      "suite": [
+        1,
+        7,
+        8,
+        12,
+        17
+      ]
+    },
+    {
+      "detectable": 23,
+      "family": "ordered-revision",
+      "id": "generated-043",
+      "kernel_obligations": 8,
+      "killed": 23,
+      "size": 7,
+      "suite": [
+        9,
+        1,
+        2,
+        5,
+        6,
+        23,
+        26
+      ]
+    },
+    {
+      "detectable": 30,
+      "family": "ordered-revision",
+      "id": "generated-044",
+      "kernel_obligations": 8,
+      "killed": 30,
+      "size": 8,
+      "suite": [
+        0,
+        1,
+        3,
+        8,
+        19,
+        20,
+        23,
+        27
+      ]
+    },
+    {
+      "detectable": 28,
+      "family": "ordered-revision",
+      "id": "generated-045",
+      "kernel_obligations": 8,
+      "killed": 28,
+      "size": 7,
+      "suite": [
+        20,
+        0,
+        4,
+        5,
+        6,
+        12,
+        24
+      ]
+    },
+    {
+      "detectable": 30,
+      "family": "ordered-revision",
+      "id": "generated-046",
+      "kernel_obligations": 9,
+      "killed": 30,
+      "size": 9,
+      "suite": [
+        3,
+        6,
+        12,
+        13,
+        18,
+        19,
+        23,
+        27,
+        28
+      ]
+    },
+    {
+      "detectable": 34,
+      "family": "ordered-revision",
+      "id": "generated-047",
+      "kernel_obligations": 11,
+      "killed": 34,
+      "size": 9,
+      "suite": [
+        0,
+        16,
+        2,
+        3,
+        4,
+        5,
+        6,
+        15,
+        24
+      ]
+    },
+    {
+      "detectable": 18,
+      "family": "ordered-revision",
+      "id": "generated-048",
+      "kernel_obligations": 5,
+      "killed": 18,
+      "size": 5,
+      "suite": [
+        1,
+        2,
+        6,
+        12,
+        26
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "ordered-revision",
+      "id": "generated-049",
+      "kernel_obligations": 5,
+      "killed": 20,
+      "size": 5,
+      "suite": [
+        4,
+        5,
+        7,
+        11,
+        20
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "ordered-revision",
+      "id": "generated-050",
+      "kernel_obligations": 7,
+      "killed": 24,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        23
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "ordered-revision",
+      "id": "generated-051",
+      "kernel_obligations": 7,
+      "killed": 24,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        3,
+        10,
+        13,
+        15,
+        25
+      ]
+    },
+    {
+      "detectable": 34,
+      "family": "ordered-revision",
+      "id": "generated-052",
+      "kernel_obligations": 9,
+      "killed": 34,
+      "size": 9,
+      "suite": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        13,
+        18,
+        23,
+        29
+      ]
+    },
+    {
+      "detectable": 35,
+      "family": "ordered-revision",
+      "id": "generated-053",
+      "kernel_obligations": 9,
+      "killed": 35,
+      "size": 9,
+      "suite": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        10,
+        15,
+        20,
+        23
+      ]
+    },
+    {
+      "detectable": 27,
+      "family": "ordered-revision",
+      "id": "generated-054",
+      "kernel_obligations": 11,
+      "killed": 27,
+      "size": 9,
+      "suite": [
+        3,
+        26,
+        5,
+        6,
+        11,
+        22,
+        24,
+        27,
+        29
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "ordered-revision",
+      "id": "generated-055",
+      "kernel_obligations": 6,
+      "killed": 16,
+      "size": 4,
+      "suite": [
+        17,
+        27,
+        3,
+        8
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "ordered-revision",
+      "id": "generated-056",
+      "kernel_obligations": 6,
+      "killed": 22,
+      "size": 6,
+      "suite": [
+        0,
+        3,
+        4,
+        10,
+        17,
+        19
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "ordered-revision",
+      "id": "generated-057",
+      "kernel_obligations": 6,
+      "killed": 24,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8
+      ]
+    },
+    {
+      "detectable": 27,
+      "family": "ordered-revision",
+      "id": "generated-058",
+      "kernel_obligations": 9,
+      "killed": 27,
+      "size": 9,
+      "suite": [
+        3,
+        5,
+        9,
+        10,
+        15,
+        16,
+        20,
+        23,
+        26
+      ]
+    },
+    {
+      "detectable": 30,
+      "family": "ordered-revision",
+      "id": "generated-059",
+      "kernel_obligations": 9,
+      "killed": 30,
+      "size": 8,
+      "suite": [
+        4,
+        1,
+        6,
+        8,
+        10,
+        11,
+        24,
+        25
+      ]
+    },
+    {
+      "detectable": 38,
+      "family": "ordered-revision",
+      "id": "generated-060",
+      "kernel_obligations": 10,
+      "killed": 38,
+      "size": 10,
+      "suite": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        10,
+        21,
+        23,
+        30
+      ]
+    },
+    {
+      "detectable": 6,
+      "family": "behavior-preserving",
+      "id": "generated-061",
+      "kernel_obligations": 2,
+      "killed": 6,
+      "size": 2,
+      "suite": [
+        0,
+        1
+      ]
+    },
+    {
+      "detectable": 6,
+      "family": "behavior-preserving",
+      "id": "generated-062",
+      "kernel_obligations": 3,
+      "killed": 6,
+      "size": 3,
+      "suite": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "detectable": 9,
+      "family": "behavior-preserving",
+      "id": "generated-063",
+      "kernel_obligations": 4,
+      "killed": 9,
+      "size": 4,
+      "suite": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "detectable": 15,
+      "family": "behavior-preserving",
+      "id": "generated-064",
+      "kernel_obligations": 5,
+      "killed": 15,
+      "size": 5,
+      "suite": [
+        0,
+        2,
+        4,
+        5,
+        8
+      ]
+    },
+    {
+      "detectable": 12,
+      "family": "behavior-preserving",
+      "id": "generated-065",
+      "kernel_obligations": 6,
+      "killed": 12,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        13
+      ]
+    },
+    {
+      "detectable": 15,
+      "family": "behavior-preserving",
+      "id": "generated-066",
+      "kernel_obligations": 7,
+      "killed": 15,
+      "size": 7,
+      "suite": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8,
+        15
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "behavior-preserving",
+      "id": "generated-067",
+      "kernel_obligations": 8,
+      "killed": 24,
+      "size": 8,
+      "suite": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "detectable": 18,
+      "family": "behavior-preserving",
+      "id": "generated-068",
+      "kernel_obligations": 9,
+      "killed": 18,
+      "size": 9,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        11,
+        12,
+        20
+      ]
+    },
+    {
+      "detectable": 21,
+      "family": "behavior-preserving",
+      "id": "generated-069",
+      "kernel_obligations": 10,
+      "killed": 21,
+      "size": 10,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        12,
+        13,
+        15
+      ]
+    },
+    {
+      "detectable": 33,
+      "family": "behavior-preserving",
+      "id": "generated-070",
+      "kernel_obligations": 11,
+      "killed": 33,
+      "size": 11,
+      "suite": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        14,
+        20
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "behavior-preserving",
+      "id": "generated-071",
+      "kernel_obligations": 12,
+      "killed": 24,
+      "size": 12,
+      "suite": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        22,
+        23
+      ]
+    },
+    {
+      "detectable": 27,
+      "family": "behavior-preserving",
+      "id": "generated-072",
+      "kernel_obligations": 13,
+      "killed": 27,
+      "size": 13,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        10,
+        11,
+        13,
+        14,
+        15,
+        17,
+        30
+      ]
+    },
+    {
+      "detectable": 42,
+      "family": "behavior-preserving",
+      "id": "generated-073",
+      "kernel_obligations": 14,
+      "killed": 42,
+      "size": 14,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        13,
+        15,
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "detectable": 30,
+      "family": "behavior-preserving",
+      "id": "generated-074",
+      "kernel_obligations": 15,
+      "killed": 30,
+      "size": 15,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        16,
+        24
+      ]
+    },
+    {
+      "detectable": 33,
+      "family": "behavior-preserving",
+      "id": "generated-075",
+      "kernel_obligations": 16,
+      "killed": 33,
+      "size": 16,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        17,
+        18,
+        24,
+        25
+      ]
+    },
+    {
+      "detectable": 51,
+      "family": "behavior-preserving",
+      "id": "generated-076",
+      "kernel_obligations": 17,
+      "killed": 51,
+      "size": 17,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        15,
+        17,
+        19,
+        20,
+        24
+      ]
+    },
+    {
+      "detectable": 36,
+      "family": "behavior-preserving",
+      "id": "generated-077",
+      "kernel_obligations": 18,
+      "killed": 36,
+      "size": 18,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15,
+        16,
+        18,
+        23,
+        25,
+        31
+      ]
+    },
+    {
+      "detectable": 39,
+      "family": "behavior-preserving",
+      "id": "generated-078",
+      "kernel_obligations": 19,
+      "killed": 39,
+      "size": 19,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "detectable": 60,
+      "family": "behavior-preserving",
+      "id": "generated-079",
+      "kernel_obligations": 20,
+      "killed": 60,
+      "size": 20,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        18,
+        22,
+        23,
+        24,
+        26,
+        27
+      ]
+    },
+    {
+      "detectable": 42,
+      "family": "behavior-preserving",
+      "id": "generated-080",
+      "kernel_obligations": 21,
+      "killed": 42,
+      "size": 21,
+      "suite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        20,
+        23,
+        24,
+        25,
+        27
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "nonlaminar",
+      "id": "generated-081",
+      "kernel_obligations": 8,
+      "killed": 16,
+      "size": 2,
+      "suite": [
+        15,
+        2
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "nonlaminar",
+      "id": "generated-082",
+      "kernel_obligations": 10,
+      "killed": 20,
+      "size": 3,
+      "suite": [
+        8,
+        0,
+        7
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "nonlaminar",
+      "id": "generated-083",
+      "kernel_obligations": 12,
+      "killed": 24,
+      "size": 3,
+      "suite": [
+        13,
+        3,
+        6
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "nonlaminar",
+      "id": "generated-084",
+      "kernel_obligations": 8,
+      "killed": 16,
+      "size": 3,
+      "suite": [
+        11,
+        1,
+        2
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "nonlaminar",
+      "id": "generated-085",
+      "kernel_obligations": 8,
+      "killed": 20,
+      "size": 2,
+      "suite": [
+        11,
+        15
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "nonlaminar",
+      "id": "generated-086",
+      "kernel_obligations": 12,
+      "killed": 24,
+      "size": 4,
+      "suite": [
+        9,
+        10,
+        0,
+        6
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "nonlaminar",
+      "id": "generated-087",
+      "kernel_obligations": 7,
+      "killed": 16,
+      "size": 3,
+      "suite": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "nonlaminar",
+      "id": "generated-088",
+      "kernel_obligations": 9,
+      "killed": 20,
+      "size": 3,
+      "suite": [
+        1,
+        4,
+        9
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "nonlaminar",
+      "id": "generated-089",
+      "kernel_obligations": 11,
+      "killed": 24,
+      "size": 3,
+      "suite": [
+        11,
+        9,
+        3
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "nonlaminar",
+      "id": "generated-090",
+      "kernel_obligations": 8,
+      "killed": 16,
+      "size": 3,
+      "suite": [
+        3,
+        1,
+        4
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "nonlaminar",
+      "id": "generated-091",
+      "kernel_obligations": 9,
+      "killed": 20,
+      "size": 2,
+      "suite": [
+        14,
+        3
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "nonlaminar",
+      "id": "generated-092",
+      "kernel_obligations": 11,
+      "killed": 24,
+      "size": 4,
+      "suite": [
+        15,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "nonlaminar",
+      "id": "generated-093",
+      "kernel_obligations": 8,
+      "killed": 16,
+      "size": 3,
+      "suite": [
+        9,
+        1,
+        0
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "nonlaminar",
+      "id": "generated-094",
+      "kernel_obligations": 10,
+      "killed": 20,
+      "size": 2,
+      "suite": [
+        4,
+        0
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "nonlaminar",
+      "id": "generated-095",
+      "kernel_obligations": 11,
+      "killed": 24,
+      "size": 3,
+      "suite": [
+        14,
+        2,
+        9
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "nonlaminar",
+      "id": "generated-096",
+      "kernel_obligations": 8,
+      "killed": 16,
+      "size": 3,
+      "suite": [
+        8,
+        1,
+        5
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "nonlaminar",
+      "id": "generated-097",
+      "kernel_obligations": 8,
+      "killed": 20,
+      "size": 2,
+      "suite": [
+        4,
+        1
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "nonlaminar",
+      "id": "generated-098",
+      "kernel_obligations": 9,
+      "killed": 24,
+      "size": 4,
+      "suite": [
+        11,
+        3,
+        0,
+        5
+      ]
+    },
+    {
+      "detectable": 16,
+      "family": "nonlaminar",
+      "id": "generated-099",
+      "kernel_obligations": 6,
+      "killed": 16,
+      "size": 2,
+      "suite": [
+        11,
+        0
+      ]
+    },
+    {
+      "detectable": 20,
+      "family": "nonlaminar",
+      "id": "generated-100",
+      "kernel_obligations": 10,
+      "killed": 20,
+      "size": 3,
+      "suite": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "typed-extended",
+      "id": "generated-101",
+      "kernel_obligations": 5,
+      "killed": 24,
+      "size": 4,
+      "suite": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "detectable": 29,
+      "family": "typed-extended",
+      "id": "generated-102",
+      "kernel_obligations": 6,
+      "killed": 29,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 29,
+      "family": "typed-extended",
+      "id": "generated-103",
+      "kernel_obligations": 5,
+      "killed": 29,
+      "size": 5,
+      "suite": [
+        0,
+        1,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "detectable": 19,
+      "family": "typed-extended",
+      "id": "generated-104",
+      "kernel_obligations": 5,
+      "killed": 19,
+      "size": 4,
+      "suite": [
+        2,
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "detectable": 33,
+      "family": "typed-extended",
+      "id": "generated-105",
+      "kernel_obligations": 7,
+      "killed": 33,
+      "size": 7,
+      "suite": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 26,
+      "family": "typed-extended",
+      "id": "generated-106",
+      "kernel_obligations": 6,
+      "killed": 26,
+      "size": 5,
+      "suite": [
+        4,
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "detectable": 17,
+      "family": "typed-extended",
+      "id": "generated-107",
+      "kernel_obligations": 4,
+      "killed": 17,
+      "size": 4,
+      "suite": [
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "detectable": 29,
+      "family": "typed-extended",
+      "id": "generated-108",
+      "kernel_obligations": 5,
+      "killed": 29,
+      "size": 5,
+      "suite": [
+        0,
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 31,
+      "family": "typed-extended",
+      "id": "generated-109",
+      "kernel_obligations": 6,
+      "killed": 31,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "detectable": 25,
+      "family": "typed-extended",
+      "id": "generated-110",
+      "kernel_obligations": 5,
+      "killed": 25,
+      "size": 5,
+      "suite": [
+        1,
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 26,
+      "family": "typed-extended",
+      "id": "generated-111",
+      "kernel_obligations": 4,
+      "killed": 26,
+      "size": 4,
+      "suite": [
+        1,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "detectable": 22,
+      "family": "typed-extended",
+      "id": "generated-112",
+      "kernel_obligations": 4,
+      "killed": 22,
+      "size": 3,
+      "suite": [
+        0,
+        1,
+        7
+      ]
+    },
+    {
+      "detectable": 23,
+      "family": "typed-extended",
+      "id": "generated-113",
+      "kernel_obligations": 5,
+      "killed": 23,
+      "size": 4,
+      "suite": [
+        3,
+        0,
+        2,
+        7
+      ]
+    },
+    {
+      "detectable": 36,
+      "family": "typed-extended",
+      "id": "generated-114",
+      "kernel_obligations": 6,
+      "killed": 36,
+      "size": 6,
+      "suite": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 33,
+      "family": "typed-extended",
+      "id": "generated-115",
+      "kernel_obligations": 6,
+      "killed": 33,
+      "size": 6,
+      "suite": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "detectable": 26,
+      "family": "typed-extended",
+      "id": "generated-116",
+      "kernel_obligations": 6,
+      "killed": 26,
+      "size": 5,
+      "suite": [
+        5,
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "detectable": 29,
+      "family": "typed-extended",
+      "id": "generated-117",
+      "kernel_obligations": 6,
+      "killed": 29,
+      "size": 6,
+      "suite": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "typed-extended",
+      "id": "generated-118",
+      "kernel_obligations": 4,
+      "killed": 24,
+      "size": 4,
+      "suite": [
+        0,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "detectable": 21,
+      "family": "typed-extended",
+      "id": "generated-119",
+      "kernel_obligations": 5,
+      "killed": 21,
+      "size": 4,
+      "suite": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "detectable": 24,
+      "family": "typed-extended",
+      "id": "generated-120",
+      "kernel_obligations": 5,
+      "killed": 24,
+      "size": 4,
+      "suite": [
+        0,
+        3,
+        6,
+        7
+      ]
+    }
+  ],
+  "classification": "post-protocol adversarial baseline",
+  "cpu_seconds": 0.32264195999999995
+}

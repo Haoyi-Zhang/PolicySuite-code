@@ -1,0 +1,10 @@
+{
+  "cpu_seconds": 0.46767607,
+  "peak_rss_kib": 14856,
+  "policy_evaluations": 13107,
+  "structural_admissions": 12831,
+  "three_layer_control_optimum": 3,
+  "two_layer_families": 52,
+  "two_layer_pairs": 2704,
+  "workers": 1
+}

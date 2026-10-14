@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+    "-B",
+    "tests/test_metamorphic.py"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.9482654970000013,
+  "timeout_seconds": 45
+}
