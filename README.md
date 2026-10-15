@@ -128,9 +128,11 @@ Original repository materials use the accompanying MIT license. No third-party s
 The complete project packet includes a paper-side release checker:
 
 ```sh
-python -B paper/audit_references.py --paper-dir paper --output-dir paper-audit-new
+python -B ../paper/audit_references.py --paper-dir ../paper --output-dir paper-audit-new
 ```
 
+Run that optional command from this artifact directory only when the sibling
+`../paper/` directory from the complete project packet is present.
 It checks 61 scholarly references, TeX citation use, DOI/title/key uniqueness,
 the canonical Hopcroft and Karp identifiers, the emitted bibliography, the
 supplied 12-page budget, and source-to-PDF modification order. IEEE style-control
